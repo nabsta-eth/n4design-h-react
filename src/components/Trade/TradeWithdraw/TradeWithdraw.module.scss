@@ -1,0 +1,16 @@
+.wrapper {
+  column-gap: 8px;
+}
+
+.mobileWrapper {
+  margin: 0 12px !important;
+}
+
+.mobileHeader {
+  margin-bottom: 12px;
+  opacity: inherit;
+}
+
+.withdrawText :global(.uk-tooltip-content):after {
+  bottom: 0 !important;
+}

@@ -1,0 +1,85 @@
+.expand {
+  font-size: 20px;
+}
+
+.grillzButton {
+  position: unset;
+  margin-right: -4px;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.formContainer {
+  padding: 12px;
+}
+
+.formContainerMobile {
+  height: var(--available-content-height-with-both-taskbars);
+  overflow-y: auto;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.label {
+  max-height: 21px;
+}
+
+.flashingPrice {
+  line-height: 19px !important;
+}
+
+.tradeButton {
+  padding: 0 !important;
+}
+
+$price-border-radius: var(--app-border-radius);
+
+.buySellPrices {
+  margin: -10px 0;
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+  background-color: var(--app-background-color);
+  border-radius: $price-border-radius;
+  overflow: hidden;
+}
+
+.buyPrice,
+.sellPrice {
+  padding: 1px 8px 0;
+  height: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.sellPrice {
+  color: var(--app-down-color);
+  border: var(--app-border-width) solid var(--app-down-color);
+  border-radius: $price-border-radius 0 0 $price-border-radius;
+  border-right-color: var(--app-background-color) !important;
+}
+
+.buyPrice {
+  color: var(--app-up-color);
+  border: var(--app-border-width) solid var(--app-up-color);
+  border-radius: 0 $price-border-radius $price-border-radius 0;
+  border-left: none !important;
+}
+
+.maxLeverage {
+  position: relative;
+  z-index: 1;
+  margin-top: -2px;
+  font-size: 0.8rem;
+  padding: 0 4px;
+  height: 18px;
+  color: var(--app-warning-color);
+  background-color: var(--app-background-color);
+  border: var(--app-border-width) solid var(--app-warning-color);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+}

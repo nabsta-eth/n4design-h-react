@@ -1,0 +1,85 @@
+@use "src/assets/styles/tipr-fli.scss" as tiprFli;
+
+.tiprButton {
+  height: 30px;
+}
+
+.smaller {
+  font-size: 0.8rem;
+}
+
+.tiprDropdown {
+  border: none !important;
+}
+
+.tiprDropdownContent {
+  width: 298px;
+  padding: 0.5rem 1rem;
+  color: var(--app-orange-color);
+  background-color: var(--app-tipr-dropdown-background-color);
+  border: var(--app-border-width) solid var(--app-orange-color-qtr-opacity);
+  border-radius: var(--app-border-radius);
+  span,
+  i,
+  a {
+    color: var(--app-orange-color);
+  }
+
+  .halfOpacity {
+    opacity: 0.5;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .tiprDropdownHeader {
+    padding: 4px 0;
+  }
+
+  .tiprDropdownNormal {
+    padding: 4px 0;
+  }
+
+  .tiprDropdownIndent {
+    padding: 4px 0 4px 1rem;
+  }
+
+  .checkbox {
+    color: var(--app-orange-color);
+    font-size: 1.1rem;
+  }
+
+  .divider {
+    height: var(--app-border-width);
+    width: calc(100% + 2rem);
+    background-color: var(--app-orange-color);
+    opacity: 0.0625;
+    margin: 0 -1rem;
+  }
+
+  .tiprDropdownRewardEligibility {
+    margin-top: 4px;
+  }
+
+  .tiprLink {
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.tiprEligibilityBadge {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background-color: var(--app-orange-color);
+  color: var(--app-background-color) !important;
+  font-size: 0.75rem;
+  font-weight: bold !important;
+  padding: 2px 2px 0;
+  line-height: 1;
+  border: 2px solid var(--app-background-color);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  pointer-events: none;
+}

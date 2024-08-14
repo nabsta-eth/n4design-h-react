@@ -1,0 +1,72 @@
+@use "src/assets/styles/globals" as globals;
+
+[id*="tradingview"] {
+  height: 100% !important;
+}
+
+.trade-chart {
+  width: calc(100% - 2px);
+  height: calc(100% - 80px);
+  position: relative;
+  z-index: 0;
+  border: 1px solid var(--app-primary-color-qtr-opacity);
+  overflow: hidden;
+
+  .ui {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.675rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    .expand {
+      font-size: 20px;
+      line-height: 0;
+      z-index: 10;
+    }
+
+    .periods {
+      flex: 1;
+      border: 1px solid var(--app-primary-color);
+      display: flex;
+      z-index: 10;
+
+      .period {
+        flex: 1;
+        padding: 0 0.75rem;
+        background-color: var(--app-background-color);
+        cursor: pointer;
+
+        &:hover:not(.selected) {
+          background-color: var(--app-primary-color);
+          color: var(--app-background-color);
+          font-weight: 600;
+        }
+
+        &.selected {
+          background-color: var(--app-primary-color);
+          color: var(--app-background-color);
+          font-weight: 600;
+          cursor: default;
+        }
+      }
+    }
+
+    .symbol {
+      flex: 4;
+      padding-left: 1rem;
+    }
+  }
+
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (min-width: globals.$desktop-breakpoint) {
+  .trade-chart {
+    height: calc(100% - 45px);
+  }
+}

@@ -1,0 +1,22 @@
+@use "src/assets/styles/globals" as globals;
+
+.hfi-wallet-button {
+  border-left: none !important;
+  border-bottom: none !important;
+  border-right: none !important;
+}
+
+@media screen and (min-width: globals.$min-small-mobile-breakpoint) {
+  .uk-margin-small-right\>xs {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: globals.$max-small-mobile-breakpoint) {
+  .uk-margin-small-right\>xs {
+    margin-right: 0;
+  }
+  .uk-hidden\@xs {
+    display: none;
+  }
+}

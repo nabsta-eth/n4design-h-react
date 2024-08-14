@@ -1,0 +1,39 @@
+.topRightLabelWrapper {
+  position: relative;
+  &:focus-visible {
+    background-color: inherit !important;
+  }
+  &:hover {
+    box-shadow: none !important;
+    border-right-color: inherit !important;
+  }
+
+  &.mobile {
+    .label {
+      top: -10px;
+      right: -6px;
+      border: 2px solid var(--app-background-color);
+    }
+  }
+
+  .label {
+    position: absolute;
+    top: -8px;
+    right: -1px;
+    color: var(--app-background-color);
+    background-color: var(--app-warning-color);
+    border: 1px solid var(--app-background-color);
+    font-size: 0.75rem;
+    line-height: 1.25;
+    width: 20px;
+    text-align: center;
+    border-radius: calc(var(--app-border-radius) * 0.5);
+    user-select: none;
+    cursor: default;
+    font-weight: bold;
+  }
+}
+
+.solidFa {
+  font-weight: bold !important;
+}

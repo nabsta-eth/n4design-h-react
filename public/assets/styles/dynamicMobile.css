@@ -1,0 +1,42 @@
+.modal-header:not(.modal-header--border) {
+  padding-top: 110px;
+}
+
+.modal-header--empty {
+  padding: 0;
+}
+
+.login-view__container {
+  height: calc(var(--available-content-height-with-bottom-taskbar-only) - 39px);
+}
+
+.login-view__scroll {
+  max-height: unset;
+}
+
+.wallet-list__container {
+  height: calc(var(--available-content-height-with-bottom-taskbar-only) - 94px);
+}
+
+.wallet-list__search-container {
+  padding-top: 66px;
+}
+
+.wallet-list__scroll-container {
+  height: calc(var(--available-content-height-with-bottom-taskbar-only) - 94px);
+  max-height: unset;
+}
+
+.vertical-accordion__container {
+  border-top: none;
+}
+
+.accordion-item--full-height {
+  height: unset;
+  max-height: unset !important;
+}
+
+.dynamic-shadow-dom-content div[style^="background: var(--dynamic-alert-1);"] {
+  right: 12px;
+  left: unset !important;
+}

@@ -1,0 +1,36 @@
+.fak.fa-handlelight:before,
+.fa-kit.fa-handlelight:before {
+  content: "";
+}
+
+.fak.fa-handleregular:before,
+.fa-kit.fa-handleregular:before {
+  content: "";
+}
+
+.fak.fa-handlesolid:before,
+.fa-kit.fa-handlesolid:before {
+  content: "";
+}
+
+.fak.fa-handlethin:before,
+.fa-kit.fa-handlethin:before {
+  content: "";
+}
+
+.fak.fa-trade:before,
+.fa-kit.fa-trade:before {
+  content: "";
+}
+
+.fak,
+.fa-kit {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-variant: normal;
+  text-rendering: auto;
+  font-family: Font Awesome Kit;
+  font-style: normal;
+  line-height: 1;
+}

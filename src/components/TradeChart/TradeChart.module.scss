@@ -1,0 +1,15 @@
+.chartContainer {
+  z-index: 1;
+}
+
+.mobileContainer {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+}
+
+.popoutContainer {
+  height: 100vh;
+}
+
+.mobileLoader {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+}

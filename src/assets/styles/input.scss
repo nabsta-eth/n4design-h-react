@@ -1,0 +1,31 @@
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  float: left;
+  -moz-appearance: textfield;
+}
+
+.uk-form-icon {
+  color: inherit;
+}
+
+.hfi-input {
+  .hfi-input-right-component {
+    position: absolute;
+    right: 8px;
+    padding-right: 5px;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

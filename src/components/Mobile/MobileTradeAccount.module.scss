@@ -1,0 +1,20 @@
+.accountContainer {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountContainerFocussed {
+  height: var(--true-viewport-height);
+}
+
+.accountHeader {
+  height: 42px;
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-light-primary-color);
+}
+
+.accountWrapper {
+  height: calc(var(--available-content-height-with-both-taskbars) - 52px);
+}

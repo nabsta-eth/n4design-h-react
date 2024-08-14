@@ -1,0 +1,68 @@
+.rightTitle {
+  margin-right: -13px;
+}
+
+.greaterThanEqualIcon {
+  margin-right: 12px;
+}
+
+.inputOpen {
+  margin-right: 10px;
+}
+
+.inputClosed {
+  margin-right: 23px;
+}
+
+.thresholdInput {
+  text-align: right;
+  padding-right: 44.5px !important;
+  height: 36px !important;
+}
+
+.tokenColumn {
+  width: 244px;
+}
+
+.handleCollateralImage {
+  position: absolute;
+  margin-left: -18px;
+  margin-top: -2px;
+  z-index: 0;
+  border-radius: 50%;
+  border: var(--app-border-width) solid var(--app-background-color);
+}
+
+.buttonColumnWidth {
+  width: 116px;
+}
+
+.buttonGroup {
+  margin-top: -2px;
+}
+
+.assetIcon {
+  border-radius: 50%;
+  background-color: var(--app-primary-color-qtr-opacity);
+  [class^="_fallbackImg"] {
+    margin-top: 0;
+  }
+}
+
+.handleAssetIcon {
+  [class^="_icon_"] {
+    border-radius: 0;
+  }
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.connectButton {
+  width: 200px;
+}
+
+.headerDataDash {
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}

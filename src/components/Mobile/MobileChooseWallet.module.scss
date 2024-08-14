@@ -1,0 +1,13 @@
+.header {
+  height: 42px;
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-light-primary-color);
+  z-index: 1;
+}
+
+.bodyWrapper {
+  width: 100%;
+  max-width: 500px;
+  height: calc(var(--available-content-height-with-bottom-taskbar-only) - 42px);
+  margin: 0 auto;
+}

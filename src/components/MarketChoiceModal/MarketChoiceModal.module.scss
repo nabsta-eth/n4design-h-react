@@ -1,0 +1,38 @@
+.marketChoiceContainer {
+  padding: 30px 50px;
+}
+
+.desktopModal {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileModal {
+  height: calc(var(--available-content-height-with-both-taskbars) - 3px);
+  width: calc(100vw + var(--app-border-width) * 2) !important;
+  border-width: 0 !important;
+  border-radius: var(--app-border-radius) var(--app-border-radius) 0 0 !important;
+  box-shadow: var(--app-primary-color-qtr-opacity) 0px 0px 0px
+    var(--app-border-width);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0 !important;
+  padding-top: 8px !important;
+  transform: translateY(calc(100% + 2px));
+
+  .closeButton {
+    top: -4px !important;
+  }
+}
+
+.mobileModalShow {
+  background: transparent !important;
+
+  > div {
+    position: relative;
+  }
+
+  .mobileModal {
+    transform: translateY(2px);
+  }
+}

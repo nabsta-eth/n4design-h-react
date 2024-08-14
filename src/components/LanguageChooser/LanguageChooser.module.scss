@@ -1,0 +1,18 @@
+.mobileLanguagesNav {
+  max-width: 500px;
+  margin: 0 auto !important;
+  padding: 0 15px !important;
+}
+
+.languages {
+  row-gap: 16px;
+}
+
+.languageButton {
+  width: calc(50% - 0.5rem);
+  margin-bottom: 1rem !important;
+}
+
+.lastLanguageButton {
+  margin-bottom: 0 !important;
+}

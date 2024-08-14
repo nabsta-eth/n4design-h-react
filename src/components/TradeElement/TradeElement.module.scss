@@ -1,0 +1,35 @@
+$trade-height: 46;
+
+:export {
+  tradeHeight: $trade-height;
+}
+
+.tradeWrapper {
+  height: #{$trade-height}px;
+  padding: 0 0.75rem;
+  background-color: var(--app-primary-color-32nd-opacity);
+  border-bottom: var(--app-border-width) solid
+    var(--app-primary-color-16th-opacity);
+}
+
+.tradeWrapperStacked {
+  height: unset;
+  padding: 0.5rem 0.75rem;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.switchButton {
+  cursor: pointer !important;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+:global(.hfi-down .uk-tooltip-content):after {
+  border-bottom: 1px dashed var(--app-down-color) !important;
+}
+
+:global(.flexlayout__tab_button_content) {
+  text-wrap: nowrap;
+}

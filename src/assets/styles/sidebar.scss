@@ -1,0 +1,14 @@
+.pro-sidebar {
+  height: var(--true-viewport-height);
+  width: 220px !important;
+  min-width: 220px !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background: var(--app-background-color);
+  width: 220px;
+  z-index: 99999;
+  border-right: 1px solid #{var(--app-primary-color-qtr-opacity)};
+  position: fixed !important;
+  padding: 0 15px;
+}

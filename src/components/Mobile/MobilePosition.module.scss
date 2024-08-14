@@ -1,0 +1,25 @@
+.positionContainer {
+  padding: 6px 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+}
+
+.isLongLeverage {
+  font-size: 0.75rem;
+}
+
+.profit {
+  font-size: 0.75rem;
+}
+
+.size {
+  font-size: 0.75rem;
+}
+
+.pairText {
+  margin-top: 1px;
+  margin-bottom: -4px;
+}
+
+.flashingNumber {
+  line-height: unset !important;
+}

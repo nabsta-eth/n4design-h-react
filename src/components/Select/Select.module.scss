@@ -1,0 +1,125 @@
+.marketInput {
+  padding-left: 42px !important;
+}
+
+.pairWrapper {
+  &:not(.dropdownPairWrapper) {
+    margin-left: 3px;
+  }
+  z-index: 0;
+}
+
+.dropdownPairWrapper {
+  position: relative !important;
+  width: 39px !important;
+  margin-left: 3px;
+  margin-top: 7px;
+
+  [class*="_viewOnlyTokenBackground"] {
+    margin-left: 3px;
+  }
+
+  [class^="_instrumentSymbolBackground"] {
+    margin-top: -7px;
+    span {
+      margin-top: -1px;
+    }
+  }
+}
+
+.imgClass {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imgWrapperWithBorder {
+  width: 24px;
+  z-index: 1;
+  & img {
+    display: block;
+    border: 3px solid var(--app-background-color);
+    border-radius: 50%;
+  }
+}
+
+.imgWrapperWithoutBorder {
+  width: 18px;
+}
+
+.searchInput1 {
+  height: 38px !important;
+}
+
+.searchInput2 {
+  height: 36px !important;
+}
+
+.noBorderBottom {
+  border-bottom: none !important;
+}
+
+.imageBackground {
+  border-radius: 50%;
+  background-color: var(--app-primary-color-qtr-opacity);
+}
+
+html[class*="handleView"] button:hover .imageBackground {
+  background-color: var(--app-background-color);
+}
+
+.searchWrapper {
+  background-color: var(--app-theme-background-color);
+  border-radius: var(--app-border-radius);
+  z-index: 2000;
+}
+
+.searchIconShift {
+  margin-left: 11px !important;
+}
+
+.searchInputShift {
+  padding-left: 5px !important;
+}
+
+:global(.hfi-select) {
+  .hideChevron,
+  .hiddenChevron {
+    transition: opacity ease-in-out 0.2s;
+  }
+}
+
+.chevron {
+  &.hideChevron {
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s;
+  }
+}
+
+.selectLabel {
+  position: absolute;
+  right: 40px;
+  top: 13px;
+  cursor: pointer;
+
+  &.hiddenChevron {
+    transition: opacity ease-in-out 0.2s;
+    right: 13px;
+  }
+}
+
+:global(.hfi-select):hover {
+  .hiddenChevron {
+    opacity: 0;
+  }
+  .hideChevron {
+    opacity: 1;
+  }
+}
+
+.dropdownSpritesheetIcon {
+  [class^="_baseToken"] {
+    display: flex;
+    align-items: center;
+  }
+}

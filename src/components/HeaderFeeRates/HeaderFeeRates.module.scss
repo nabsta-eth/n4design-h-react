@@ -1,0 +1,39 @@
+.rateContainer {
+  font-size: 0.75rem;
+  gap: 4px;
+  margin-top: 1px;
+}
+
+.labelColumn,
+.longColumn,
+.shortColumn {
+  gap: 2px;
+}
+
+.fundingRateAmount,
+.borrowRateAmount {
+  width: 100%;
+  justify-content: flex-end;
+  background-color: var(--app-primary-color-3qtr-opacity);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  padding: 0 4px;
+
+  :global(.uk-tooltip-content):after {
+    left: 4px !important;
+    right: 4px !important;
+    border-bottom: 1px dashed var(--app-background-color) !important;
+  }
+
+  span {
+    color: var(--app-background-color) !important;
+    font-weight: bold;
+  }
+}
+
+.fundingRatePositive {
+  background-color: var(--app-down-color-3qtr-opacity);
+}
+
+.fundingRateNegative {
+  background-color: var(--app-up-color-3qtr-opacity);
+}

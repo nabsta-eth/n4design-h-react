@@ -1,0 +1,35 @@
+.price {
+  color: inherit;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.fontSize1Pt1 {
+  font-size: 1.1rem;
+}
+
+.larger {
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.largerFontSize1Pt1 {
+  font-size: 1.32rem;
+}
+
+.superscript {
+  color: inherit;
+  margin-left: -0.5px;
+}
+
+.viewOnly {
+  margin-top: 0;
+}
+
+.up {
+  color: var(--app-up-color) !important;
+}
+
+.down {
+  color: var(--app-down-color) !important;
+}

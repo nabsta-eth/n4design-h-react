@@ -1,0 +1,32 @@
+.modal-header--empty {
+  padding-top: 12px;
+}
+
+.wallet-list__scroll-container {
+  height: 382px;
+}
+
+.login-view__container {
+  height: 472px;
+}
+
+[data-testid="qr-code-wrapper"] {
+  height: 425px;
+}
+
+.dynamic-user-profile-layout {
+  height: 533px;
+}
+
+.pending-connect__container {
+  height: 425px;
+}
+
+.email-verification__container {
+  height: 425px;
+}
+
+.dynamic-shadow-dom-content div[style^="background: var(--dynamic-alert-1);"] {
+  padding: 2px 6px 2px;
+  left: 326px !important;
+}

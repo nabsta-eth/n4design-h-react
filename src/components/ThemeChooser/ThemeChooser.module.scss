@@ -1,0 +1,220 @@
+@use "src/assets/styles/themes/handle" as handle;
+@use "src/assets/styles/themes/handleBerg" as handleBerg;
+@use "src/assets/styles/themes/handleView" as handleView;
+@use "src/assets/styles/themes/handleX" as handleX;
+@use "src/assets/styles/themes/handlePro" as handlePro;
+
+.wrapper {
+  margin: 0 -16px -16px 0 !important;
+  padding: 0 !important;
+}
+
+.themeWrapper {
+  padding: 15px;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--app-primary-color);
+
+    span {
+      color: var(--app-background-color);
+      font-weight: bold;
+    }
+
+    .colourGrid span {
+      border: 1px solid var(--app-background-color-half-opacity);
+    }
+  }
+
+  &.active {
+    cursor: default;
+    background: var(--app-primary-color-half-opacity);
+
+    span {
+      color: var(--app-background-color);
+      font-weight: bold;
+    }
+
+    .colourGrid span {
+      border: 1px solid var(--app-background-color-half-opacity);
+    }
+  }
+}
+
+.colourGrid {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.colouredBoxPrimary {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$primary-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$primary-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$primary-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$primary-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$primary-color;
+  }
+}
+
+.colouredBoxUp {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$up-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$up-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$up-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$up-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$up-color;
+  }
+}
+
+.colouredBoxDown {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$down-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$down-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$down-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$down-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$down-color;
+  }
+}
+
+.colouredBoxSecondary {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$error-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$error-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$error-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$error-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$error-color;
+  }
+}
+
+.colouredBoxTertiary {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$warning-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$warning-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$warning-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$warning-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$warning-color;
+  }
+}
+
+.colouredBoxBackground {
+  width: 20px;
+  height: 20px;
+  border: var(--app-border-thin-light-primary-color);
+  border-radius: calc(var(--app-border-radius) / 2);
+
+  &.handle {
+    background-color: handle.$background-color;
+  }
+
+  &.handleBerg {
+    background-color: handleBerg.$background-color;
+  }
+
+  &.handleView {
+    background-color: handleView.$background-color;
+  }
+
+  &.handleX {
+    background-color: handleX.$background-color;
+  }
+
+  &.handlePro {
+    background-color: handlePro.$background-color;
+  }
+}
+
+.checkboxWrapper {
+  padding: 15px;
+}
+
+.betaWarning {
+  padding-right: 15px;
+  span {
+    font-weight: normal;
+  }
+}

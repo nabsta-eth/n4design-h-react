@@ -1,0 +1,93 @@
+$tile-height: 58px;
+
+.tradePortfolioWrapper {
+  padding: 10px;
+}
+
+.tile {
+  height: $tile-height;
+  min-width: fit-content;
+  flex-grow: 1;
+  border-color: var(--app-theme-border-color) !important;
+
+  &:not(:first-of-type) {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  &:not(:last-of-type) {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+
+  &:last-of-type:after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+  }
+}
+
+.customiseTile {
+  flex-grow: unset;
+  width: 36px;
+}
+
+.portfolioDropdown {
+  border: var(--app-border-thin-xx-light-primary-color);
+  border-radius: var(--app-border-radius);
+  background-color: var(--app-theme-background-color);
+  width: fit-content !important;
+}
+
+.dropdownContent {
+  padding: 8px 12px !important;
+}
+
+.dropdownTitle {
+  border-bottom: 1px solid var(--app-primary-color-qtr-opacity);
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  margin-right: 1rem;
+}
+
+html:not([class$="Modern"]) {
+  .dropdownContent {
+    border-color: var(--app-primary-color-qtr-opacity) !important;
+  }
+
+  .tile {
+    border-color: var(--app-primary-color-qtr-opacity) !important;
+
+    &:not(:last-of-type) {
+      border-right-width: 0 !important;
+    }
+  }
+}
+
+html[class$="Modern"] {
+  .tradePortfolioWrapper {
+    column-gap: 1px;
+  }
+
+  .dropdownContent {
+    box-shadow: 0 0 0 1px var(--app-primary-color-8th-opacity);
+    border-radius: var(--app-border-radius);
+  }
+
+  .tile {
+    border-color: var(--app-primary-color-8th-opacity) !important;
+
+    &:not(:first-of-type) {
+      border-left-width: 0 !important;
+    }
+
+    &:not(:last-of-type) {
+      border-right-width: 0 !important;
+    }
+  }
+}

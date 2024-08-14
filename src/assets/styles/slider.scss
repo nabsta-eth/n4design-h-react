@@ -1,0 +1,116 @@
+.uk-form-controls {
+  position: relative;
+}
+
+.slider {
+  padding: 1.752rem 0 10px 0;
+
+  .bar {
+    position: relative;
+    display: flex;
+    height: 1.25rem;
+
+    .red,
+    .orange,
+    .yellow,
+    .green {
+      height: 100%;
+      flex: 1; // Set via JavaScript.
+    }
+
+    .red {
+      background-color: var(--app-error-color);
+    }
+
+    .orange {
+      background-color: var(--app-orange-color);
+    }
+
+    .yellow {
+      background-color: var(--app-warning-color);
+    }
+
+    .green {
+      background-color: var(--app-primary-color);
+    }
+
+    .needle {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: cyan;
+      user-select: none;
+
+      &.interactive {
+        cursor: pointer;
+      }
+
+      .pointer {
+        bottom: -8px;
+        top: -8px;
+        position: absolute;
+        left: -4px;
+        width: 4px;
+        border: var(--app-border-primary-color);
+        box-shadow: 0 0 2px 2px rgb(0 0 0 / 15%);
+        background-color: rgb(0 0 0 / 15%);
+      }
+
+      .data {
+        position: absolute;
+        top: -35px;
+        width: 60px;
+        left: -27px; // 7px accounting for percentage character.
+        text-align: center;
+        color: var(--app-primary-color);
+        font-weight: 100;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+//new slider overrides
+.rc-slider-rail {
+  background-color: var(--app-primary-color-qtr-opacity) !important;
+}
+.rc-slider-track {
+  background-color: var(--app-primary-color) !important;
+}
+.rc-slider-rail,
+.rc-slider-track {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.rc-slider-handle {
+  border-color: var(--app-primary-color) !important;
+  &:focus,
+  &:focus-visible,
+  &.rc-handle-dragging {
+    outline: none;
+    box-shadow: none !important;
+    border-color: inherit;
+  }
+}
+
+.rc-slider-dot {
+  border-color: var(--app-primary-color-qtr-opacity) !important;
+  background-color: var(--app-background-color) !important;
+}
+
+.rc-slider-dot-active {
+  border-color: var(--app-primary-color) !important;
+  background-color: var(--app-background-color) !important;
+}
+
+.rc-slider-mark-text {
+  color: var(--app-primary-color) !important;
+  //border-bottom: transparent !important;
+  &:hover {
+    font-weight: bold;
+    border-bottom: var(--app-border-primary-color) !important;
+  }
+}

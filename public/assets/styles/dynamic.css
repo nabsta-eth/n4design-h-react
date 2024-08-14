@@ -1,0 +1,118 @@
+.vertical-accordion__container {
+  border-top: var(--app-border-width) solid var(--app-primary-color-16th-opacity);
+}
+
+.button--padding-login-screen-height {
+  border-radius: var(--dynamic-border-radius);
+}
+
+.badge__container {
+  border-radius: calc(var(--app-border-radius) * 0.5);
+}
+
+.typography {
+  text-transform: lowercase;
+}
+
+.input__container .input {
+  border-radius: var(--dynamic-border-radius);
+}
+
+.button--brand-primary {
+  color: var(--app-background-color);
+}
+
+.typography--primary.single-wallet-buttons--center {
+  color: var(--app-background-color);
+}
+
+.new-to-web3-buttons__container button {
+  color: var(--app-background-color);
+  border-radius: var(--dynamic-border-radius);
+}
+
+.footer-buttons-item {
+  border-radius: var(--dynamic-border-radius);
+}
+
+.help-header {
+  border-bottom: 1px solid var(--app-primary-color-16th-opacity);
+}
+
+.search-instead__container {
+  margin-top: 1.5rem;
+}
+
+.footer-more-info-content__wrapper {
+  padding: 1.5rem 12px;
+}
+
+.pending-connect__copy-text {
+  max-width: 22rem;
+}
+
+.divider {
+  padding: 4px 0;
+}
+
+.divider__dash {
+  background: var(--app-primary-color-16th-opacity);
+}
+
+.list-tile {
+  border-radius: var(--dynamic-border-radius);
+}
+
+.social-sign-in--tile .typography--button-primary {
+  font-weight: normal;
+}
+
+.wallet-list__scroll-container--error {
+  padding: var(--dynamic-initial-view-content-padding);
+}
+
+.walletlist-help-content__container {
+  height: 471px;
+}
+
+.accordion-item {
+  transition-duration: 0s;
+}
+
+.tos-and-pp__footer {
+  display: none;
+}
+
+.dynamic-shadow-dom-content div[style^="background: var(--dynamic-alert-1);"] {
+  display: none;
+}
+
+[data-testid="iconic-github"] {
+  background: #e6edf3;
+  border-radius: 50%;
+}
+
+.dynamic-widget-wallet-header__wallet-actions button .typography {
+  color: var(--app-background-color);
+}
+
+.dynamic-widget-wallet-header__wallet-info {
+  display: none;
+}
+.qr-code-wrapper__scan-issue-message {
+  border: none;
+}
+
+.qrcode-container__top {
+  background-color: transparent;
+  padding: 0;
+}
+
+.button--primary span {
+  color: var(--app-background-color);
+}
+
+input,
+button {
+  text-transform: lowercase;
+}

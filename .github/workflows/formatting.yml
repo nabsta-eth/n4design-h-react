@@ -1,0 +1,22 @@
+name: Formatting check
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  formatting-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+      - name: Install dependencies
+        run: |
+          corepack enable
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          pnpm install
+      - name: Check formatting
+        run: pnpm format --check

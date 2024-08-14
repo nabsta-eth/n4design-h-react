@@ -1,0 +1,53 @@
+$positions-header-height: 46;
+
+:export {
+  positionsHeaderHeight: $positions-header-height;
+}
+
+.headerWrapper {
+  padding: 0.2rem 0.75rem;
+  height: #{$positions-header-height}px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.positionsWrapper {
+  display: grid;
+  grid-template-columns: 115px repeat(5, 1fr) 152px;
+}
+
+.positionsWrapperSmall {
+  display: grid;
+  grid-template-columns: 115px repeat(4, 1fr) 152px;
+}
+
+.flashingHdr {
+  padding-right: 8px;
+  span:after {
+    right: 8px !important;
+  }
+}
+
+.entryPriceHdr {
+  padding-right: 8px;
+}
+
+.checkbox {
+  margin-top: 0 !important;
+}
+
+.sizeHeader {
+  gap: 0.5rem;
+}
+
+.switchButton {
+  cursor: pointer !important;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.initMarginHeader,
+.returnHeader {
+  margin-top: 1px;
+  font-size: 0.875rem;
+}

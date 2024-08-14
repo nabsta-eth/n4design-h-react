@@ -1,0 +1,41 @@
+.tile {
+  height: 100%;
+}
+
+.chartTile {
+  height: 200px;
+}
+
+.tileBody {
+  padding: 12px 20px !important;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+.chartHeader {
+  position: absolute !important;
+  top: 1px;
+  margin-left: 6px;
+  width: calc(100% - 12px) !important;
+  :global(.uk-tooltip-content):not(:global(.chart-add-remove)):after {
+    bottom: 0 !important;
+  }
+}
+
+.pairModal {
+  height: 210px;
+
+  :global(.scrollbars) {
+    height: 144px !important;
+  }
+}
+
+[id*="priceChart"] :global(.uk-modal) {
+  background: none;
+}
+
+.connectButton {
+  min-width: 200px;
+}

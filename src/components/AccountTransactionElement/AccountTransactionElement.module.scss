@@ -1,0 +1,26 @@
+$account-transaction-height: 46;
+
+:export {
+  accountTransactionHeight: $account-transaction-height;
+}
+
+.accountTransactionWrapper {
+  padding: 0.25rem 0.75rem;
+  height: #{$account-transaction-height}px;
+  border-bottom: var(--app-border-width) solid
+    var(--app-primary-color-16th-opacity);
+  background-color: var(--app-primary-color-32nd-opacity);
+}
+
+.accountTransactionWrapperStacked {
+  padding: 0.5rem 0.75rem;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.switchButton {
+  cursor: pointer !important;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}

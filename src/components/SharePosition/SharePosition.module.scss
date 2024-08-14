@@ -1,0 +1,52 @@
+.shareContainer {
+  padding: 30px 50px;
+  gap: 1rem;
+  background-color: var(--app-background-color);
+}
+
+.mobile.shareContainer {
+  padding: 15px 28px !important;
+  width: 400px;
+  min-height: unset;
+}
+
+.mobile.buttonCollection {
+  width: 400px;
+}
+
+.mobile.creatingButton {
+  width: 400px;
+}
+
+.handleLogo {
+  margin-left: -7px;
+}
+
+@media (max-width: 430px) {
+  .mobile.shareContainer,
+  .mobile.buttonCollection,
+  .mobile.creatingButton {
+    max-width: unset;
+    width: calc(100vw - 30px);
+  }
+}
+
+.evenSmaller {
+  font-size: 0.675rem;
+}
+
+.shareButton {
+  padding: 0 !important;
+}
+
+.copyButton {
+  padding: 0 2rem !important;
+}
+
+.side {
+  margin-left: 0 !important;
+}
+
+.quoteIconHidden {
+  margin-left: -16px;
+}

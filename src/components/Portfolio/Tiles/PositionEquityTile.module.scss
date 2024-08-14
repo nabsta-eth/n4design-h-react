@@ -1,0 +1,7 @@
+.tooltip,
+.tooltip:focus {
+  background-color: transparent !important;
+  &:after {
+    bottom: -4px !important;
+  }
+}

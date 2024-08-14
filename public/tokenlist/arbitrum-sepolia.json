@@ -1,0 +1,32 @@
+{
+  "name": "handle fi arbitrum sepolia",
+  "timestamp": "2024-01-18T00:00:00.000Z",
+  "version": {
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 421614,
+      "symbol": "fxUSD",
+      "name": "handleUSD",
+      "address": "0xe5B75EcA86d4E855a65Af3D95A3aCe1679f2850d",
+      "decimals": 18,
+      "logoURI": "https://app.handle.fi/assets/images/handle/fxUSDLogo.png",
+      "extensions": {
+        "isHlpToken": true,
+        "isStable": true,
+        "isFxToken": true
+      }
+    },
+    {
+      "chainId": 421614,
+      "symbol": "DAI",
+      "name": "mockDAI",
+      "address": "0x947002FF4cddc40Fa677eC1E057A2C8eED674077",
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png"
+    }
+  ]
+}

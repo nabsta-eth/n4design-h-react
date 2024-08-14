@@ -1,0 +1,4 @@
+.transactionsWrapper {
+  height: calc(var(--available-content-height-with-both-taskbars) - 42px);
+  overflow-y: auto;
+}

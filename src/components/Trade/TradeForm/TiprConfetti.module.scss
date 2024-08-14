@@ -1,0 +1,20 @@
+.tiprConfettiLeft,
+.tiprConfettiRight {
+  position: fixed;
+  top: 50vh;
+}
+
+.tiprConfettiLeft {
+  left: 0;
+}
+
+.tiprConfettiLeftMobile {
+  left: calc(50vw - 25px) !important;
+  top: unset !important;
+  bottom: var(--bottom-taskbar-height);
+}
+
+.tiprConfettiRight {
+  left: unset !important;
+  right: 0;
+}

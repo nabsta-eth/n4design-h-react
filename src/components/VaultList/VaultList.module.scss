@@ -1,0 +1,25 @@
+.actionButton {
+  padding: 2px 10px;
+  margin-top: -1px !important;
+  margin-bottom: -3px !important;
+  border-radius: var(--app-border-radius) !important;
+}
+
+.warning {
+  color: var(--app-warning-color);
+  span {
+    color: var(--app-warning-color);
+  }
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.connectButton {
+  width: 200px;
+}
+
+.headerDataDash {
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}

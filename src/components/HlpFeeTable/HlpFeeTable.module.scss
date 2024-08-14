@@ -1,0 +1,56 @@
+.tableHeader {
+  margin-bottom: 6px !important;
+}
+
+.headerRow {
+  padding: 6px 12px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.loader,
+.row {
+  height: 36px;
+}
+
+.row,
+.rowStacked {
+  padding: 0 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+  background-color: var(--app-primary-color-32nd-opacity);
+}
+
+.tokenColumn {
+  max-width: 90px;
+  [class^="_fallbackImg"] {
+    margin-top: 0;
+  }
+}
+
+.tokenColumnStacked {
+  max-width: 70px;
+}
+
+.aboveTarget {
+  color: var(--app-warning-color);
+}
+
+.buyButtonColumn {
+  max-width: 127px;
+}
+
+.buttonColumn {
+  width: 127px;
+  padding-left: 1rem !important;
+}
+
+.buyButton {
+  line-height: 26px !important;
+}
+
+.valueStacked {
+  font-size: 0.75rem;
+  sub {
+    bottom: 0;
+    margin-left: 0;
+  }
+}

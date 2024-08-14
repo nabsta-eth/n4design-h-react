@@ -1,0 +1,55 @@
+@use "src/assets/styles/globals" as globals;
+
+#vaults {
+  &.uk-table {
+    border-top: unset;
+  }
+  .hfi-vaults-table-header {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+  }
+
+  .hfi-vaults-header-row {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 0 var(--app-border-width) var(--app-primary-color) !important;
+    border-radius: var(--app-border-radius) var(--app-border-radius) 0 0 !important;
+  }
+}
+
+@media screen and (max-width: globals.$tablet-breakpoint) {
+  #vaults {
+    .padding-bottom\<m {
+      padding-bottom: 4px !important;
+    }
+  }
+}
+
+.hfi-top-n1 {
+  top: -1px;
+}
+
+.hfi-token-cell {
+  width: 116px;
+}
+
+.hfi-collateral-cell {
+  width: 84px;
+}
+
+.fa-stack {
+  margin-top: -4px;
+  display: inline-block;
+  height: 1em;
+  line-height: 1em;
+  position: relative;
+  vertical-align: middle;
+  width: 1.25em;
+}
+
+.fa-stack-halfx {
+  font-size: 0.5em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}

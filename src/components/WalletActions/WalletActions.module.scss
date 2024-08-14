@@ -1,0 +1,8 @@
+@use "src/assets/styles/globals" as globals;
+
+.walletActionWrapper {
+  font-size: #{globals.$taskbar-icon-size - 4}px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      handle.fi | the global defi FX protocol. multi-currency stablecoins backed
+      by ethereum and more.
+    </title>
+    <link
+      rel="manifest"
+      id="manifest"
+      href="/manifest.json"
+      data-react-helmet="true"
+    />
+    <meta name="theme-color" content="#181c24" data-react-helmet="true" />
+    <meta
+      name="msapplication-TileColor"
+      content="#181c24"
+      data-react-helmet="true"
+    />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180 192x192"
+      href="/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      href="/splashscreens/iphone5_splash.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/iphone6_splash.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/iphoneplus_splash.png"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/iphonex_splash.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/iphonexr_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/iphonexsmax_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/ipad_splash.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/ipadpro1_splash.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/ipadpro3_splash.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="/splashscreens/ipadpro2_splash.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <meta
+      name="description"
+      content="the global defi FX protocol. borrow, swap &amp; trade multi-currency stablecoins backed by ethereum and more."
+    />
+    <meta property="og:title" content="handle.fi" />
+    <meta property="og:site_name" content="app.handle.fi" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="/assets/images/handle.fiLogoChimpNewCut.png"
+    />
+    <meta
+      property="og:description"
+      content="the global defi FX protocol. borrow, swap &amp; trade multi-currency stablecoins backed by ethereum and more."
+    />
+    <meta property="og:url" content="./public" />
+    <meta property="twitter:card" content="website" />
+    <meta property="twitter:site" content="@handle_fi" />
+    <meta
+      property="twitter:description"
+      content="the global defi FX protocol. borrow, swap &amp; trade multi-currency stablecoins backed by ethereum and more."
+    />
+    <meta
+      property="twitter:image"
+      content="/assets/images/handle.fiLogoChimpNewCut.png"
+    />
+    <link href="/assets/styles/fonts.css" rel="stylesheet" />
+    <style>
+      html {
+        /* This compensates for idiosyncracies with viewport height on some mobile device browsers.*/
+        --true-viewport-height: 100vh;
+        --top-taskbar-height: 52px;
+        --bottom-taskbar-height: 56px;
+        /* These variables represent the available content height between taskbars.*/
+        /* The first is used by all mobile routes except MobileHome as they have both taskbars present.*/
+        /* The second is for MobileHome which does not have the top taskbar.*/
+        --available-content-height-with-both-taskbars: calc(
+          var(--true-viewport-height) - var(--bottom-taskbar-height) -
+            var(--top-taskbar-height)
+        );
+        --available-content-height-with-bottom-taskbar-only: calc(
+          var(--true-viewport-height) - var(--bottom-taskbar-height)
+        );
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--app-background-color, #181c24);
+      }
+
+      #global-loader {
+        position: fixed;
+        z-index: 2147483647;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      #global-loader-status {
+        position: fixed;
+        top: calc(50% + 20px);
+      }
+
+      .loading-wrapper {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        color: var(--app-primary-color);
+        background-color: var(--app-background-color, #181c24);
+        padding: 0;
+      }
+
+      .loading-content {
+        height: var(--available-content-height-with-bottom-taskbar-only);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loading-text {
+        text-align: center;
+        font-family: "Berkeley Mono", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 24px;
+      }
+    </style>
+    <link rel="stylesheet" href="/assets/styles/flexlayout.dark.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/token-placeholder.png"
+    />
+    <!-- preload for the install modal -->
+    <link
+      rel="preload"
+      href="/fonts/MaterialSymbols/MaterialSymbolsOutlined.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-9ECS2JSXBJ"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-9ECS2JSXBJ");
+  </script>
+  <script>
+    window.global = window;
+  </script>
+  <script
+    src="https://kit.fontawesome.com/d5608c51ca.js"
+    crossorigin="anonymous"
+  ></script>
+  <script type="module" src="/sw.js"></script>
+  <body>
+    <div id="handle"></div>
+    <div id="global-loader">
+      <div class="loading-wrapper">
+        <div class="loading-content">
+          <img
+            src="/assets/images/handle.fiDancingGorilla.gif"
+            alt="app.handle.fi"
+            width="60"
+          />
+          <span id="global-loader-status"></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/index.tsx"></script>
+    <script src="/charting_library/charting_library.js"></script>
+  </body>
+</html>

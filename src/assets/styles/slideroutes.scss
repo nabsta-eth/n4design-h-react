@@ -1,0 +1,8 @@
+.slide-routes {
+  .item {
+    &[class*="forward-"]:not([class*="-enter"]),
+    &[class*="back-"]:not([class*="-enter"]) {
+      visibility: hidden;
+    }
+  }
+}

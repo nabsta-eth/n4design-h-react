@@ -1,0 +1,14 @@
+.toggle {
+  border: var(--app-border-width) solid var(--app-primary-color);
+  display: inline;
+  line-height: 2rem;
+  height: 2rem;
+  padding: 0 0.5rem;
+  background-color: var(--app-background-color);
+  user-select: none;
+  cursor: pointer;
+}
+
+.isOn {
+  background: var(--app-primary-color);
+}

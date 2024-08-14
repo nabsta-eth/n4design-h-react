@@ -1,0 +1,39 @@
+.taskbar {
+  height: var(--top-taskbar-height);
+  position: fixed;
+  border-bottom: 1px solid var(--app-primary-color-qtr-opacity);
+  padding: 0.75rem 2rem;
+  gap: 2rem;
+  z-index: 9;
+  &.noBorder {
+    border-color: transparent;
+  }
+}
+
+.taskbarItem > *:not(.hfi-error) {
+  color: var(--app-primary-color);
+}
+
+.taskbarIcon {
+  height: 24px;
+  width: 24px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  a {
+    cursor: default;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.qrBorder {
+  border: var(--app-border-thin-xx-light-primary-color);
+}

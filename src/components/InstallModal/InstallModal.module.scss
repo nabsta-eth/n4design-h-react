@@ -1,0 +1,115 @@
+.modal {
+  :global(.uk-modal-dialog) {
+    max-width: calc(100% - 24px) !important;
+  }
+}
+
+.iosSafari {
+  :global(.uk-modal-dialog) {
+    bottom: 12px;
+  }
+}
+
+.desktop {
+  :global(.uk-modal-dialog) {
+    width: 450px;
+    top: 12px;
+  }
+}
+
+.desktopChrome {
+  :global(.uk-modal-dialog) {
+    right: 120px;
+  }
+}
+
+.desktopBrave {
+  :global(.uk-modal-dialog) {
+    right: 280px;
+  }
+}
+
+.desktopEdge {
+  :global(.uk-modal-dialog) {
+    right: 200px;
+  }
+}
+
+.androidChrome {
+  :global(.uk-modal-dialog) {
+    top: 12px;
+  }
+}
+
+.installIconBox {
+  height: 32px;
+  width: 32px;
+  border-radius: calc(var(--app-border-radius) * 0.5);
+}
+
+.installIconBoxDark {
+  color: #e8e8e8;
+  background-color: #363645;
+}
+
+.installIconBoxLight {
+  color: #242424;
+  background-color: #e8e8e8;
+}
+
+.installBox {
+  border-radius: var(--app-border-radius);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu;
+  background-color: #363645;
+  height: 40px;
+}
+
+.installBoxDark {
+  color: #e8e8e8;
+  background-color: #363645;
+}
+
+.installBoxLight {
+  color: #242424;
+  background-color: #e8e8e8;
+}
+
+.installBoxIos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.installBoxAndroid {
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.installIconIos {
+  color: #0070c9;
+}
+
+.installIconEdge {
+  transform: rotateZ(-90deg);
+}
+
+.installIconDark {
+  color: #e8e8e8;
+}
+
+.installIconEdge.installIconDark {
+  color: #969595;
+}
+
+.installIconChrome.installIconDark {
+  color: #b6b6b6;
+}
+
+.installIconLight {
+  color: #242424;
+}
+
+span span:has(.installIcon2) {
+  margin-top: 3px;
+}

@@ -1,0 +1,32 @@
+.mobileSettingsWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.settingsPadding {
+  padding: 0 15px;
+}
+
+.settingsHeader {
+  height: 42px;
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.tab {
+  padding: 10px 0 !important;
+  span {
+    color: var(--app-primary-color-half-opacity);
+    padding-left: 0;
+  }
+  &.active {
+    span {
+      color: inherit;
+      font-weight: 600;
+    }
+  }
+}
+
+.tab:not(:first-of-type) {
+  border-left: var(--app-border-thin-x-light-primary-color);
+}

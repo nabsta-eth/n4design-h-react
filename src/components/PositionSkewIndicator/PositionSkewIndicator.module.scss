@@ -1,0 +1,54 @@
+.skewContainer {
+  font-size: 0.75rem;
+  height: 38px;
+  margin-top: -3px;
+  flex: 1 1;
+}
+
+.skewBar {
+  width: 120px;
+  height: 18px;
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  overflow: hidden;
+}
+
+.label {
+  font-size: 0.75rem;
+}
+
+.longLabelOverlay,
+.shortLabelOverlay {
+  position: relative;
+  color: var(--app-background-color);
+  font-weight: bold;
+  margin-top: 1px;
+  margin-bottom: -20px;
+}
+
+.longLabelOverlay {
+  margin-left: 5px;
+}
+
+.shortLabelOverlay {
+  margin-right: 5px;
+}
+
+.longSkewBar {
+  height: 100%;
+  background-color: var(--app-up-color);
+}
+
+.shortSkewBar {
+  height: 100%;
+  background-color: var(--app-down-color);
+  text-align: right;
+}
+
+.noPositions {
+  width: 300px;
+  text-align: center;
+  color: var(--app-background-color);
+  font-weight: bold;
+  position: absolute;
+  margin-top: -17px;
+}

@@ -1,0 +1,85 @@
+@use "src/assets/styles/globals" as globals;
+
+html {
+  --bottom-taskbar-padding: 0;
+}
+
+.taskbar {
+  height: 56px;
+  background: var(--app-theme-background-color);
+  padding-left: var(--bottom-taskbar-padding);
+  padding-right: var(--bottom-taskbar-padding);
+  z-index: 1021;
+}
+
+.taskbarItem {
+  height: 100%;
+  padding-bottom: 16px;
+  color: var(--app-primary-color);
+  a {
+    color: var(--app-primary-color);
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: var(--app-primary-color);
+    }
+  }
+
+  .homeIcon {
+    font-size: #{globals.$taskbar-icon-size * 1.5 + "px"};
+    margin-top: 4px;
+  }
+
+  &.android,
+  &.notStandalone {
+    padding-bottom: 0;
+
+    .homeIcon,
+    .customIcon {
+      margin-top: 0;
+    }
+  }
+}
+
+.taskbarIcon {
+  font-size: #{globals.$taskbar-icon-size + "px"};
+}
+
+.homeIcon {
+  font-size: #{globals.$taskbar-icon-size * 1.5 + "px"};
+  margin-top: 4px;
+}
+
+.customIcon {
+  font-size: #{globals.$taskbar-icon-size + "px"};
+  margin-top: 4px;
+}
+
+.active.taskbarItem {
+  .taskbarIcon,
+  .homeIcon,
+  .customIcon {
+    color: var(--app-background-color);
+  }
+  background-color: var(--app-primary-color);
+}
+
+.active * {
+  a {
+    cursor: default;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default !important;
+  opacity: 0.5;
+}
+
+.active {
+  cursor: default !important;
+}
+
+.inactiveIcon {
+  margin-left: -#{globals.$taskbar-handle-icon-size}px;
+}

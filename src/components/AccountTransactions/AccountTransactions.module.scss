@@ -1,0 +1,40 @@
+$account-transactions-header-height: 46;
+
+:export {
+  accountTransactionsHeaderHeight: $account-transactions-header-height;
+}
+
+.dashboardWrapper {
+  border-radius: var(--app-border-radius);
+  border: var(--app-table-border);
+}
+
+.tradesHeaderWrapper {
+  padding: 0.2rem 0.75rem;
+  height: #{$account-transactions-header-height}px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+}
+
+.loading {
+  margin-top: 2.5rem;
+}
+
+.disconnected {
+  margin-top: 2rem;
+}
+
+.placeholder {
+  margin-top: 2rem;
+}
+
+.switchButton {
+  cursor: pointer !important;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.loadMoreButton {
+  width: 120px;
+}

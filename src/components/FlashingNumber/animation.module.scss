@@ -1,0 +1,29 @@
+.flash-green {
+  animation: play-flash-green 0s;
+}
+
+.flash-red {
+  animation: play-flash-red 0s;
+}
+
+@keyframes play-flash-green {
+  0% {
+    color: var(--app-background-color);
+    font-weight: bold;
+    background-color: var(--app-up-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes play-flash-red {
+  0% {
+    color: var(--app-background-color);
+    font-weight: bold;
+    background-color: var(--app-down-color);
+  }
+  100% {
+    background-color: transparent;
+  }
+}

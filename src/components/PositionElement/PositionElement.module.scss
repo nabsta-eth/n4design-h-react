@@ -1,0 +1,98 @@
+$position-height: 46;
+
+:export {
+  positionHeight: $position-height;
+}
+
+.positionWrapper {
+  display: grid;
+  grid-template-columns: 115px repeat(5, 1fr) 152px;
+  height: #{$position-height}px;
+  padding: 0 0.75rem 0;
+  border-bottom: var(--app-border-width) solid
+    var(--app-primary-color-16th-opacity);
+  background-color: var(--app-primary-color-32nd-opacity);
+}
+
+.positionWrapperSmall {
+  display: grid;
+  grid-template-columns: 115px repeat(4, 1fr) 152px;
+}
+
+.positionWrapperStacked {
+  height: unset;
+  padding: 0.375rem 0.75rem;
+}
+
+.flashing {
+  padding-right: 8px;
+  line-height: 1.2 !important;
+  &.stacked {
+    line-height: 1.5 !important;
+    padding-right: 0;
+  }
+}
+
+.entryPrice {
+  padding-right: 8px;
+}
+
+.platformWrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 4px 0;
+  margin-left: 8px;
+  height: fit-content;
+}
+
+.platform {
+  opacity: 0.375;
+  width: 16px;
+}
+
+.pairIcons {
+  margin-right: -4px;
+}
+
+.side {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.return {
+  padding-top: 2px;
+}
+
+.returnPercentage {
+  font-size: 0.75rem;
+  margin-top: -1px;
+}
+
+.initMarginHeader {
+  font-size: 0.875rem;
+}
+
+.initMargin {
+  font-size: 0.875rem;
+}
+
+.stacked {
+  .flashing {
+    padding-right: 0;
+    line-height: unset !important;
+
+    .returnPercentage {
+      margin-top: 1px;
+    }
+  }
+
+  &.returnPercentage {
+    margin-top: 3px;
+  }
+}
+
+.markPriceHeader {
+  :global(.uk-tooltip-content):after {
+    bottom: 6px !important;
+  }
+}

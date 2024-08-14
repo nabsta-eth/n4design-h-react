@@ -1,0 +1,46 @@
+$max-content-width: 576px;
+
+.mainContent {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1px;
+  justify-content: center;
+  max-width: $max-content-width !important;
+
+  .tile {
+    height: 76px;
+    padding: 4px 0;
+    background-color: var(--app-primary-color-16th-opacity);
+
+    &:first-child:not(:only-child) {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-right: none;
+    }
+
+    &:last-child:not(:only-child) {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border-left: none;
+    }
+  }
+}
+
+.additionalContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .additionalContentInner {
+    width: 100%;
+    max-width: $max-content-width !important;
+    .depositWithdrawButtons {
+      width: 100%;
+    }
+  }
+}
+
+.leftIcon {
+  margin-right: 16px;
+  cursor: pointer;
+}

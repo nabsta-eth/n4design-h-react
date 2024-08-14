@@ -1,0 +1,10 @@
+.confirmOpen {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin-top: -50px !important;
+  > a,
+  form {
+    display: none;
+  }
+}

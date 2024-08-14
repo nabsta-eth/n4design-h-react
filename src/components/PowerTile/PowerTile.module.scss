@@ -1,0 +1,176 @@
+.dropdown {
+  background: none !important;
+  border: none !important;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &:global(.uk-open) {
+    display: flex !important;
+  }
+
+  .powerTile {
+    width: 430px;
+    border: var(--app-border-width) solid var(--app-primary-color-8th-opacity) !important;
+    border-radius: var(--app-border-radius) !important;
+    background-color: var(--app-background-color) !important;
+
+    .content {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      padding: 12px;
+      background-color: var(--app-primary-color-32nd-opacity);
+
+      .closeButton {
+        position: absolute;
+        top: 8px;
+        margin-right: -6px;
+
+        i {
+          line-height: 1;
+        }
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        padding-right: 24px;
+        width: fit-content;
+
+        .identicon {
+          height: 20px !important;
+          width: 20px !important;
+          margin-right: 8px;
+        }
+
+        .addressButtons {
+          margin-left: 12px;
+
+          .linkButton {
+            border-top-left-radius: 0 !important;
+            border-bottom-left-radius: 0 !important;
+            border-left: none !important;
+          }
+        }
+
+        .walletButtons {
+          margin-left: 12px;
+        }
+
+        .disconnectButton {
+          margin-left: 12px;
+        }
+
+        :global(.uk-icon-button.hfi-powertile-button) {
+          i {
+            font-weight: normal;
+          }
+          &:hover i {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .qrCodeButton {
+        pointer-events: all !important;
+        &:global(.uk-active) {
+          background-color: var(--app-primary-color) !important;
+          i {
+            color: var(--app-background-color) !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  &.mobile {
+    position: fixed;
+    bottom: var(--bottom-taskbar-height);
+    top: unset !important;
+    left: 0 !important;
+    width: 100vw;
+    will-change: transform;
+    transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s;
+    display: flex !important;
+    transform: translateY(250px);
+    &:global(.uk-open) {
+      transform: translateY(0);
+    }
+    .powerTile {
+      display: flex;
+      width: 100%;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-bottom: none !important;
+
+      :global(#trade-deposit-form),
+      :global(#trade-withdraw-form) {
+        margin: 0 !important;
+      }
+    }
+
+    .qrCodeWrapper {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  .qrCodeWrapper {
+    margin-top: 8px;
+    margin-bottom: 0;
+    width: fit-content;
+    border: var(--app-border-width) solid var(--app-primary-color-8th-opacity) !important;
+    border-radius: var(--app-border-radius) !important;
+    background-color: var(--app-background-color) !important;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  &.show {
+    top: 0;
+    left: 0;
+    height: var(--true-viewport-height);
+    width: 100vw;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+}
+
+.show {
+  top: 0;
+  left: 0;
+  height: var(--true-viewport-height);
+  width: 100vw;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.networkDropdown {
+  width: 110px !important;
+  border: 1px solid var(--app-primary-color-8th-opacity) !important;
+}
+
+.leftIcon {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .identicon {
+    margin-right: 6px !important;
+  }
+  .addressButtons,
+  .walletButtons,
+  .disconnectButton {
+    margin-left: 6px !important;
+  }
+}

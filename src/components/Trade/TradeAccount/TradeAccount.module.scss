@@ -1,0 +1,21 @@
+.accountContainer {
+  padding: 12px;
+}
+
+.outerBar {
+  overflow: hidden;
+}
+
+.row {
+  column-gap: 8px;
+}
+
+.liqRiskLabel {
+  :global(.uk-tooltip-content):after {
+    bottom: 0 !important;
+  }
+}
+
+.buttonSmart {
+  padding: 0 !important;
+}

@@ -1,0 +1,10 @@
+.closePositionHeader {
+  height: 42px;
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-light-primary-color);
+}
+
+.closePositionWrapper {
+  height: calc(var(--available-content-height-with-bottom-taskbar-only) - 42px);
+  overflow-y: auto;
+}

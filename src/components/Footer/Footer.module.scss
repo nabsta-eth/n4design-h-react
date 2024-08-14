@@ -1,0 +1,22 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  padding: 0 15px !important;
+  align-items: center;
+  width: 100%;
+  background-color: var(--app-background-color);
+  :global(.uk-first-column) {
+    padding-left: 0;
+  }
+}
+
+.networkSelect {
+  width: 130px !important;
+  height: 32px !important;
+  &:global(.hfi-select-small) {
+    input {
+      height: 100% !important;
+    }
+  }
+}

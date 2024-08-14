@@ -1,0 +1,9 @@
+.sendTokensHeader {
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-light-primary-color);
+  height: 42px;
+}
+
+.sendTokenWrapper {
+  height: calc(var(--available-content-height-with-both-taskbars) - 52px);
+}

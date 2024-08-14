@@ -1,0 +1,53 @@
+.headerNavbar {
+  margin-top: 3px;
+}
+
+.chevron {
+  font-size: 0.875rem;
+}
+
+.subMenu {
+  border-left: none !important;
+}
+
+.lowerSubMenu {
+  border-top: var(--app-border-width) solid
+    var(--app-primary-color-32nd-opacity);
+}
+
+.textOnly {
+  padding: 6px 17px 2px;
+  &:global(.hfi-orange) {
+    color: var(--app-orange-color);
+    span:not(.badge) {
+      color: var(--app-orange-color);
+    }
+  }
+  &.colorBackground {
+    color: transparent;
+    span {
+      color: transparent;
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--app-orange-color);
+  color: var(--app-background-color);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 1px 2px;
+  line-height: 1;
+  border: 2px solid var(--app-background-color);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  pointer-events: none;
+}
+
+.textBadge {
+  top: -6px;
+  right: -27px;
+  border: 2px solid var(--app-theme-background-color);
+}

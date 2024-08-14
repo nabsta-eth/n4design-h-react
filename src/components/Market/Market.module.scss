@@ -1,0 +1,54 @@
+.marketContainer {
+  padding-left: 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+  height: 40px;
+}
+
+.sellPrice {
+  padding-right: 8px;
+  .smaller {
+    font-size: 0.9rem;
+    [class*="larger"] {
+      font-size: 1.125rem !important;
+    }
+    sup {
+      top: -0.425rem;
+    }
+  }
+}
+
+.buyPrice {
+  padding-right: 8px;
+  animation-delay: 0.2s;
+  .smaller {
+    font-size: 0.9rem;
+    [class*="larger"] {
+      font-size: 1.125rem !important;
+    }
+    sup {
+      top: -0.425rem;
+    }
+  }
+}
+
+.price {
+  font-size: 1rem;
+  padding-top: 2px;
+  padding-right: 12px;
+  animation-delay: 0.4s;
+}
+
+.change {
+  font-size: 0.675rem;
+  padding-top: 2px;
+  padding-right: 12px;
+}
+
+.select {
+  pointer-events: auto;
+}
+
+.unavailableMessage {
+  padding-right: 12px;
+  white-space: nowrap;
+}

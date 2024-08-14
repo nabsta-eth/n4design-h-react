@@ -1,0 +1,37 @@
+name: Cypress Tests
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+      - name: Install dependencies
+        run: |
+          corepack enable
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_PACKAGE_READ_TOKEN }}" >> .npmrc
+          pnpm install
+      - name: Start the server for cypress
+        run: sh cypress.sh
+        timeout-minutes: 2 # Gives it a couple of minutes to start up
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          record: true
+          parallel: false
+          wait-on: "http://localhost:3000"
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PACKAGE_READ_TOKEN: ${{ secrets.GH_PACKAGE_READ_TOKEN }}
+      - name: Stop the server
+        if: always()
+        run: kill $(lsof -t -i:3000) # This will kill your server process running on port 3000 after the tests are done.

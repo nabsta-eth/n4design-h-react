@@ -1,0 +1,107 @@
+.assetsWrapper {
+  height: var(--available-content-height-with-both-taskbars);
+  overflow-y: auto;
+}
+
+.disconnectedWrapper {
+  height: var(--available-content-height-with-both-taskbars);
+  overflow-y: auto;
+  padding-top: 70px;
+}
+
+.assetsHeader {
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+  padding: 0 15px;
+  width: 100%;
+  background-color: var(--app-background-color);
+  height: 42px;
+}
+
+.assetsListWrapper {
+  height: calc(var(--available-content-height-with-both-taskbars) - 42px);
+  overflow-y: auto;
+}
+
+.assetsContainer {
+  padding: 6px 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+
+  &:has(.hideAsset) {
+    display: none !important;
+  }
+}
+
+.hideAsset {
+  display: inherit;
+}
+
+.assetDisplay {
+  position: relative;
+}
+
+.assetValue {
+  margin-top: -2px;
+  sub {
+    margin-top: -2px;
+  }
+}
+
+.assetButtonGroup {
+  width: 62px;
+}
+
+.handleImage {
+  margin-top: -4px;
+  margin-left: 6px;
+}
+
+.tokenImage {
+  background-color: var(--app-primary-color-qtr-opacity);
+  border-radius: 50%;
+}
+
+.handleCollateralImage {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -4px;
+  z-index: 1;
+  border-radius: 50%;
+  border: var(--app-border-width) solid var(--app-background-color);
+}
+
+.greaterThanEqualIcon {
+  margin-right: 12px;
+}
+
+.inputOpen {
+  margin-right: -13px;
+}
+
+.inputClosed {
+  margin-right: 0;
+}
+
+.thresholdInput {
+  text-align: right;
+  padding-right: 45.5px !important;
+  height: 36px !important;
+}
+
+.connectButton {
+  min-width: 200px;
+}
+
+.assetIcon {
+  border-radius: 50%;
+  background-color: var(--app-primary-color-qtr-opacity);
+
+  [class^="_fallbackImg"] {
+    margin-top: 0;
+  }
+}
+
+.handleAssetIcon {
+  [class^="_icon_"] {
+    border-radius: 0;
+  }
+}

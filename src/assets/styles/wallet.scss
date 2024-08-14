@@ -1,0 +1,9 @@
+@use "src/assets/styles/globals" as globals;
+
+@media screen and (max-width: globals.$tablet-breakpoint) {
+  #wallet {
+    .padding-bottom\<m {
+      padding-bottom: 4px !important;
+    }
+  }
+}

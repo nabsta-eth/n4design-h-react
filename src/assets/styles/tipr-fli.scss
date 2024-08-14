@@ -1,0 +1,65 @@
+$tipr-color: var(--app-orange-color);
+
+.uk-parent {
+  &.hfi-orange {
+    &.uk-active,
+    &:focus-within,
+    &:hover,
+    &[aria-expanded="true"] {
+      border-color: $tipr-color;
+      > .hfi-link {
+        color: var(--app-background-color);
+        background-color: $tipr-color;
+        border-color: $tipr-color;
+        font-weight: bold;
+        span,
+        i {
+          color: var(--app-background-color);
+          font-weight: bold;
+        }
+      }
+    }
+    > .hfi-link {
+      color: $tipr-color;
+      span,
+      i {
+        color: $tipr-color;
+      }
+      &[aria-expanded="true"] {
+        color: var(--app-background-color);
+        font-weight: bold;
+        background-color: $tipr-color;
+        border-color: $tipr-color;
+        span,
+        i {
+          color: var(--app-background-color);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .hfi-link {
+    &.hfi-orange {
+      color: $tipr-color;
+      span,
+      i {
+        color: $tipr-color;
+      }
+      &:hover {
+        background-color: $tipr-color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+a.hfi-orange {
+  color: $tipr-color;
+  span,
+  i {
+    color: $tipr-color;
+  }
+  &:hover {
+    color: $tipr-color;
+  }
+}

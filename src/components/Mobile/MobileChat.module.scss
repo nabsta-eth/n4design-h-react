@@ -1,0 +1,20 @@
+.chatContainer {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainerFocussed {
+  height: var(--true-viewport-height);
+}
+
+.chatHeader {
+  height: 42px;
+  padding: 0 15px;
+  border-bottom: var(--app-border-thin-light-primary-color);
+}
+
+.chatWrapper {
+  height: calc(var(--available-content-height-with-both-taskbars) - 52px);
+}

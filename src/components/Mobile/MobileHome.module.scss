@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1) 0s;
+  direction: ltr;
+  will-change: transform;
+}
+
+.mobileHome {
+  height: 100%;
+  [id*="tradingview"] {
+    width: 100%;
+    height: var(--available-content-height-with-bottom-taskbar-only) !important;
+    border: none !important;
+  }
+  pointer-events: none;
+}

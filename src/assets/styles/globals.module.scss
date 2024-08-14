@@ -1,0 +1,18 @@
+@use "globals" as *;
+
+:export {
+  mobileMenuBreakpoint: $mobile-menu-breakpoint;
+  mobileMenuBreakpointMax: $mobile-menu-breakpoint-max;
+  largeDesktopBreakpoint: $large-desktop-breakpoint;
+  largeDesktopBreakpointMax: $large-desktop-breakpoint-max;
+  desktopBreakpoint: $desktop-breakpoint;
+  desktopBreakpointMax: $desktop-breakpoint-max;
+  tabletBreakpoint: $tablet-breakpoint;
+  tabletBreakpointMax: $tablet-breakpoint-max;
+  mobileBreakpoint: $mobile-breakpoint;
+  mobileBreakpointMax: $mobile-breakpoint-max;
+  minSmallMobileBreakpoint: $min-small-mobile-breakpoint;
+  maxSmallMobileBreakpoint: $max-small-mobile-breakpoint;
+  tradeChartBreakpoint: $trade-chart-breakpoint;
+  maxAppWidth: $max-app-width;
+}

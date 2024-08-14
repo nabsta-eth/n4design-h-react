@@ -1,0 +1,30 @@
+@import "uikit/src/scss/variables.scss";
+
+$mobile-menu-breakpoint: 1100;
+$mobile-menu-breakpoint-max: 1100;
+$large-desktop-breakpoint: $breakpoint-xlarge;
+$large-desktop-breakpoint-max: ($breakpoint-xlarge - 1);
+$desktop-breakpoint: $breakpoint-large;
+$desktop-breakpoint-max: $breakpoint-large-max;
+$tablet-breakpoint: $breakpoint-medium;
+$tablet-breakpoint-max: $breakpoint-medium-max;
+$mobile-breakpoint: $breakpoint-small;
+$mobile-breakpoint-max: $breakpoint-small-max;
+$min-small-mobile-breakpoint: 376px;
+$max-small-mobile-breakpoint: 375px;
+$trade-chart-breakpoint: 1347;
+$max-app-width: 1920px;
+$font: "Berkeley Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Hiragino Sans GB",
+  "Microsoft YaHei", "微软雅黑", "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji";
+$base-font-size: 14px;
+$taskbar-icon-size: 24;
+$taskbar-handle-icon-size: ($taskbar-icon-size + 8);
+
+$homestead-color: #29b6af;
+$ropsten-color: #ff4a8d;
+$kovan-color: #9064ff;
+$rinkeby-color: #f6c343;
+$testnet-color: #3099f2;
+$polygon-color: #8247e5;

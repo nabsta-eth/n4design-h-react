@@ -1,0 +1,187 @@
+$market-choice-header-height: 38;
+$market-choice-market-column-width: 170;
+
+.marketsWrapper {
+  font-size: 12px;
+}
+
+:export {
+  marketChoiceHeaderHeight: $market-choice-header-height;
+  marketChoiceMarketColumnWidth: $market-choice-market-column-width;
+}
+
+.markets {
+  border: var(--app-border-primary-color);
+  overflow-y: auto;
+}
+
+.marketsOnly {
+  margin-top: 16px;
+  border: var(--app-border-primary-color);
+}
+
+.desktopMarkets {
+  height: 400px;
+  max-height: calc(
+    var(--true-viewport-height) - var(--app-header-height) -
+      var(--app-footer-height) - #{$market-choice-header-height}px - 190px
+  );
+}
+
+.mobileMarkets {
+  height: 100%;
+}
+
+.popoutMarkets {
+  height: 100vh;
+}
+
+.headerWrapper {
+  padding: 0 12px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+  height: #{$market-choice-header-height}px;
+  display: grid;
+  grid-template-columns: #{$market-choice-market-column-width}px 150px 1fr 1fr 1fr;
+  column-gap: 1rem;
+  margin: 0 -15px;
+}
+
+:global(.mobile) .headerWrapper {
+  grid-template-columns: #{$market-choice-market-column-width}px 1fr 1fr;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  & > div {
+    width: 100%;
+  }
+}
+
+:global(.mobile) .searchInput {
+  :global(.uk-form-icon:not(.uk-form-icon-flip)) {
+    margin-top: 3px !important;
+  }
+}
+
+.noBorder {
+  border: none;
+}
+
+.priceHeader {
+  line-height: 1.6;
+}
+
+.changeHeader {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.marketListWrapper {
+  height: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+:global(.mobile) .marketListWrapper {
+  overflow-x: hidden;
+}
+
+.marketTypeButton {
+  padding: 0 4px !important;
+  line-height: 1;
+  flex-grow: 1;
+}
+
+.favouritesOnlyWrapper {
+  width: 100px;
+  [type="checkbox"] {
+    display: block;
+  }
+}
+
+.favouritesOnlyCheckbox {
+  margin-top: -2px !important;
+}
+
+.keyHintsWrapper {
+  padding: 4px 15px 6px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -8px;
+}
+
+.keyHintsWrapperDesktop {
+  border-top: var(--app-border-thin-x-light-primary-color);
+  padding: 8px 15px;
+  margin-bottom: -15px;
+}
+
+.keyBox {
+  height: 20px;
+  min-width: 20px;
+  background-color: var(--app-primary-color-8th-opacity);
+  margin-left: 4px;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(var(--app-border-radius) * 0.5);
+
+  span,
+  i {
+    font-size: 0.8rem;
+  }
+
+  &.keyBoxMobile {
+    margin-top: -1px;
+  }
+}
+
+.mobileFilterWrapper {
+  flex-grow: 0 !important;
+}
+
+.buttonCount {
+  font-size: 0.675rem;
+  margin-left: 4px;
+}
+
+.buttonCounts {
+  height: 18px;
+  width: 18px;
+  border-radius: var(--app-border-radius) !important;
+  background-color: var(--app-primary-color);
+  color: var(--app-background-color) !important;
+  border: 3px solid var(--app-theme-border-color);
+  font-weight: bold !important;
+  font-size: 0.675rem;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 1px;
+  margin-top: -2px;
+  margin-left: -5px;
+}
+
+.marketTypeButton:global(.uk-active) .buttonCounts,
+.marketTypeButton:hover .buttonCounts {
+  background-color: var(--app-background-color);
+  color: var(--app-primary-color) !important;
+  border: 3px solid var(--app-button-background-color);
+}
+
+.marketTypeButton:active .buttonCounts {
+  background-color: var(--app-background-color);
+  color: var(--app-primary-color) !important;
+  border: 3px solid var(--app-button-active-background-color);
+}
+
+.maxMarketsText {
+  color: var(--app-orange-color);
+}
+
+.maxMarketsExceeded {
+  color: var(--app-error-color);
+}

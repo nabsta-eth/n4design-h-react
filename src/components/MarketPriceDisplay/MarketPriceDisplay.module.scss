@@ -1,0 +1,35 @@
+.sellPrice {
+  font-size: 1.1rem;
+  padding-right: 8px;
+}
+
+.buyPrice {
+  font-size: 1.1rem;
+  padding-right: 8px;
+  animation-delay: 0.2s;
+}
+
+.price {
+  font-size: 1rem;
+  line-height: 1.75;
+  padding-right: 12px;
+  animation-delay: 0.4s;
+}
+
+.change {
+  font-size: 0.75rem;
+  margin-top: -2px;
+  padding-right: 12px;
+}
+
+.select {
+  pointer-events: auto;
+}
+
+.unavailableMessage {
+  padding-right: 12px;
+  font-size: 0.8rem;
+  margin-top: -6px;
+  margin-bottom: 1px;
+  white-space: nowrap;
+}

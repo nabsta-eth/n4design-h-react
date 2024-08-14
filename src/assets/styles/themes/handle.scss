@@ -1,0 +1,218 @@
+@import "uikit/src/scss/variables.scss";
+
+$primary-color: #a9e2b0;
+$background-color: #2a313e;
+$theme-border-color: #{$primary-color}80;
+
+$up-color: #a9e2b0;
+$down-color: #ff7bac;
+$hover-color: #3a8355;
+$error-color: #ff7bac;
+$orange-color: #ffb45a;
+$warning-color: #ffff88;
+
+$half-opacity-equivalent-color: #698977;
+$quarter-opacity-equivalent-color: #495d5a;
+$eighth-opacity-equivalent-color: #39464c;
+
+$border-width: 1px;
+$border-radius: 0;
+$tab-border-width: 2px;
+
+html {
+  &.handle {
+    --app-primary-color: #{$primary-color};
+    --app-background-color: #{$background-color};
+    --app-theme-text-color: #{$primary-color};
+    --app-theme-background-color: #{$background-color};
+    --app-theme-border-color: #{$theme-border-color};
+    --app-theme-leverage-color: #a1a2a3;
+
+    --app-primary-color-3qtr-opacity: #{$primary-color}C0;
+    --app-primary-color-half-opacity: #{$primary-color}80;
+    --app-primary-color-qtr-opacity: #{$primary-color}40;
+    --app-primary-color-5th-opacity: #{$primary-color}32;
+    --app-primary-color-8th-opacity: #{$primary-color}20;
+    --app-primary-color-16th-opacity: #{$primary-color}10;
+    --app-primary-color-32nd-opacity: #{$primary-color}08;
+    --app-background-color-3qtr-opacity: #{$background-color}C0;
+    --app-up-color: #{$up-color};
+    --app-up-color-3qtr-opacity: #{$up-color}C0;
+    --app-up-color-half-opacity: #{$up-color}80;
+    --app-up-color-qtr-opacity: #{$up-color}40;
+    --app-down-color: #{$down-color};
+    --app-down-color-3qtr-opacity: #{$down-color}C0;
+    --app-down-color-half-opacity: #{$down-color}80;
+    --app-down-color-qtr-opacity: #{$down-color}40;
+    --app-error-color: #{$error-color};
+    --app-error-color-half-opacity: #{$error-color}80;
+    --app-error-color-qtr-opacity: #{$error-color}40;
+    --app-warning-color: #{$warning-color};
+    --app-warning-color-half-opacity: #{$warning-color}80;
+    --app-warning-color-qtr-opacity: #{$warning-color}40;
+    --app-orange-color: #{$orange-color};
+    --app-orange-color-half-opacity: #{$orange-color}80;
+    --app-orange-color-qtr-opacity: #{$orange-color}40;
+    --app-hover-color: #{$hover-color};
+
+    --app-background-color-half-opacity: #{$background-color}80;
+    --app-highlight-color: #{$error-color};
+
+    --app-border-width: #{$border-width};
+    --app-border-radius: #{$border-radius};
+    --app-tab-border-width: #{$tab-border-width};
+
+    --app-border-primary-color: #{$border-width} solid #{$primary-color};
+    --app-border-thin-primary-color: 1px solid #{$primary-color};
+    --app-border-thin-light-primary-color: 1px solid #{$primary-color}80;
+    --app-border-thin-x-light-primary-color: 1px solid #{$primary-color}40;
+    --app-border-thin-xx-light-primary-color: 1px solid #{$primary-color}20;
+    --app-border-warning-color: #{$border-width} solid #{$warning-color};
+    --app-table-border: #{$border-width} solid var(--app-primary-color-half-opacity);
+
+    --app-border-active-image-color: #6a8774;
+    --app-checkbox-image: url("/assets/images/handle_checkbox.svg");
+
+    --app-tooltip-text-color: #{$primary-color};
+    --app-tooltip-font-weight: normal;
+    --app-tooltip-background-color: #{$background-color};
+    --app-tooltip-border-color: #{$theme-border-color};
+
+    --app-button-font-weight: bold;
+    --app-button-hover-font-weight: bold;
+    --app-button-active-font-weight: bold;
+    --app-button-disabled-font-weight: bold;
+
+    --app-button-text-color: #{$background-color};
+    --app-button-background-color: #{$primary-color};
+    --app-button-border-color: transparent;
+    --app-button-hover-text-color: #{$background-color};
+    --app-button-hover-background-color: #{$primary-color};
+    --app-button-hover-border-color: transparent;
+    --app-button-active-text-color: #{$background-color};
+    --app-button-active-background-color: #{$primary-color}80;
+    --app-button-active-border-color: transparent;
+    --app-button-disabled-text-color: #{$background-color};
+    --app-button-disabled-background-color: #{$primary-color}80;
+    --app-button-disabled-border-color: transparent;
+    --app-button-group-divider-color: #{$background-color};
+
+    --app-default-button-text-color: #{$primary-color};
+    --app-default-button-font-weight: normal;
+    --app-default-button-active-text-color: #{$primary-color};
+    --app-default-button-font-weight: normal;
+
+    --app-secondary-button-text-color: #{$primary-color};
+    --app-secondary-button-font-weight: normal;
+    --app-secondary-button-icon-font-weight: lighter;
+    --app-secondary-button-background-color: #{$primary-color}20;
+    --app-secondary-button-border-color: #{$theme-border-color};
+    --app-secondary-button-hover-text-color: $background-color;
+    --app-secondary-button-hover-font-weight: bold;
+    --app-secondary-button-hover-icon-font-weight: normal;
+    --app-secondary-button-hover-background-color: $primary-color;
+    --app-secondary-button-hover-border-color: $primary-color;
+    --app-secondary-button-active-text-color: $background-color;
+    --app-secondary-button-active-font-weight: normal;
+    --app-secondary-button-active-icon-font-weight: normal;
+    --app-secondary-button-active-background-color: #{$primary-color}80;
+    --app-secondary-button-active-border-color: $primary-color;
+    --app-secondary-button-disabled-text-color: #{$primary-color}80;
+    --app-secondary-button-disabled-font-weight: normal;
+    --app-secondary-button-disabled-icon-font-weight: lighter;
+    --app-secondary-button-disabled-background-color: #{$primary-color}10;
+    --app-secondary-button-disabled-border-color: #{$primary-color}40;
+
+    --app-warning-button-text-color: #{$background-color};
+    --app-warning-button-background-color: #{$warning-color};
+    --app-warning-button-border-color: transparent;
+    --app-warning-button-hover-text-color: #{$background-color};
+    --app-warning-button-hover-background-color: #{$warning-color};
+    --app-warning-button-hover-border-color: transparent;
+    --app-warning-button-active-text-color: #{$background-color};
+    --app-warning-button-active-background-color: #{$warning-color}80;
+    --app-warning-button-active-border-color: transparent;
+    --app-warning-button-disabled-text-color: #{$background-color};
+    --app-warning-button-disabled-background-color: #{$warning-color}80;
+    --app-warning-button-disabled-border-color: transparent;
+    --app-warning-button-group-divider-color: #{$background-color};
+    --app-warning-secondary-button-background-color: #{$warning-color}20;
+
+    --app-yellow-button-text-color: #{$background-color};
+    --app-yellow-button-background-color: #{$warning-color};
+    --app-yellow-button-border-color: transparent;
+    --app-yellow-button-hover-text-color: #{$background-color};
+    --app-yellow-button-hover-background-color: #{$warning-color};
+    --app-yellow-button-hover-border-color: transparent;
+    --app-yellow-button-active-text-color: #{$background-color};
+    --app-yellow-button-active-background-color: #{$warning-color}80;
+    --app-yellow-button-active-border-color: transparent;
+    --app-yellow-button-disabled-text-color: #{$background-color};
+    --app-yellow-button-disabled-background-color: #{$warning-color}80;
+    --app-yellow-button-disabled-border-color: transparent;
+    --app-yellow-button-group-divider-color: #{$background-color};
+    --app-yellow-secondary-button-background-color: #{$warning-color}20;
+
+    --app-orange-button-text-color: #{$background-color};
+    --app-orange-button-background-color: #{$orange-color};
+    --app-orange-button-border-color: transparent;
+    --app-orange-button-hover-text-color: #{$background-color};
+    --app-orange-button-hover-background-color: #{$orange-color};
+    --app-orange-button-hover-border-color: transparent;
+    --app-orange-button-active-text-color: #{$background-color};
+    --app-orange-button-active-background-color: #{$orange-color}80;
+    --app-orange-button-active-border-color: transparent;
+    --app-orange-button-disabled-text-color: #{$background-color};
+    --app-orange-button-disabled-background-color: #{$orange-color}80;
+    --app-orange-button-disabled-border-color: transparent;
+    --app-orange-button-group-divider-color: #{$background-color};
+    --app-orange-secondary-button-background-color: #{$orange-color}20;
+
+    --app-error-button-text-color: #{$background-color};
+    --app-error-button-background-color: #{$error-color};
+    --app-error-button-border-color: transparent;
+    --app-error-button-hover-text-color: #{$background-color};
+    --app-error-button-hover-background-color: #{$error-color};
+    --app-error-button-hover-border-color: transparent;
+    --app-error-button-active-text-color: #{$background-color};
+    --app-error-button-active-background-color: #{$error-color}80;
+    --app-error-button-active-border-color: transparent;
+    --app-error-button-disabled-text-color: #{$background-color};
+    --app-error-button-disabled-background-color: #{$error-color}80;
+    --app-error-button-disabled-border-color: transparent;
+    --app-error-button-group-divider-color: #{$background-color};
+    --app-error-secondary-button-background-color: #{$error-color}20;
+
+    --app-up-button-text-color: #{$background-color};
+    --app-up-button-background-color: #{$up-color};
+    --app-up-button-border-color: transparent;
+    --app-up-button-hover-text-color: #{$background-color};
+    --app-up-button-hover-background-color: #{$up-color};
+    --app-up-button-hover-border-color: transparent;
+    --app-up-button-active-text-color: #{$background-color};
+    --app-up-button-active-background-color: #{$up-color}80;
+    --app-up-button-active-border-color: transparent;
+    --app-up-button-disabled-text-color: #{$background-color};
+    --app-up-button-disabled-background-color: #{$up-color}C0;
+    --app-up-button-disabled-border-color: transparent;
+    --app-up-button-group-divider-color: #{$background-color};
+    --app-up-secondary-button-background-color: #{$up-color}20;
+
+    --app-down-button-text-color: #{$background-color};
+    --app-down-button-background-color: #{$down-color};
+    --app-down-button-border-color: transparent;
+    --app-down-button-hover-text-color: #{$background-color};
+    --app-down-button-hover-background-color: #{$down-color};
+    --app-down-button-hover-border-color: transparent;
+    --app-down-button-active-text-color: #{$background-color};
+    --app-down-button-active-background-color: #{$down-color}80;
+    --app-down-button-active-border-color: transparent;
+    --app-down-button-disabled-text-color: #{$background-color};
+    --app-down-button-disabled-background-color: #{$down-color}C0;
+    --app-down-button-disabled-border-color: transparent;
+    --app-down-button-group-divider-color: #{$background-color};
+    --app-down-secondary-button-background-color: #{$down-color}20;
+
+    --app-tipr-dropdown-background-color: #3f3e41;
+  }
+}

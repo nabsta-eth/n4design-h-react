@@ -1,0 +1,104 @@
+.tradeContainer {
+  &:not(.hidden) {
+    :global(.flexlayout__layout) {
+      margin: -10px 0;
+      height: calc(
+        var(--true-viewport-height) - var(--app-header-height) -
+          var(--app-footer-height)
+      );
+      border-top: 4px solid #{var(--app-primary-color-16th-opacity)};
+      border-bottom: 4px solid #{var(--app-primary-color-16th-opacity)};
+    }
+  }
+}
+
+.tradeToolbar {
+  padding: 2px 4px;
+}
+
+.newChartForm {
+  max-width: 200px;
+  padding: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tabsetButton {
+  cursor: pointer !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  line-height: 1;
+  height: 18px;
+  width: 18px;
+  margin-right: 1px;
+  span {
+    margin-top: -2px;
+    i {
+      cursor: pointer;
+      font-size: 11px;
+    }
+  }
+  &:hover {
+    color: var(--app-background-color);
+    background-color: var(--app-primary-color-half-opacity);
+  }
+}
+
+$half-way-down-tabset: calc(
+  (100vh - var(--app-header-height) - var(--app-footer-height) - 28px) * 0.5 +
+    (var(--app-header-height) - 16px)
+);
+
+:global(.markets-resize-buttons) {
+  position: fixed !important;
+  z-index: 99;
+  top: $half-way-down-tabset;
+  :global([class*="markets-"]) {
+    height: 32px;
+    width: 12px;
+    border-radius: 4px !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+:global(.trade-resize-buttons) {
+  position: fixed !important;
+  z-index: 99;
+  top: $half-way-down-tabset;
+  :global([class*="trade-"]) {
+    height: 32px;
+    width: 12px;
+    border-radius: 4px !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+:global(.hide-sidebar-button) {
+  position: fixed !important;
+  z-index: 99;
+  top: $half-way-down-tabset;
+  height: 32px;
+  width: 12px;
+  border-radius: 4px !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.hide-buy-sell-buttons) {
+  :global(.buy-sell-button) {
+    display: none;
+  }
+}

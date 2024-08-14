@@ -1,0 +1,92 @@
+@use "src/assets/styles/globals" as globals;
+
+.grillz-loading-wrapper {
+  height: calc(var(--true-viewport-height) - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--app-primary-color);
+  background-color: var(--app-background-color);
+  padding: 0;
+}
+
+.grillz-loading-content {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#earn {
+  .uk-table {
+    border: none;
+    .inactive-pools-header {
+      border-top: var(--app-border-thin-light-primary-color) !important;
+      border-bottom: var(--app-border-thin-primary-color) !important;
+    }
+    thead tr {
+      border-bottom: var(--app-border-thin-primary-color);
+    }
+    tr {
+      &.body-row {
+        border-bottom: var(--app-border-thin-x-light-primary-color);
+
+        &:not(.uk-active) {
+          margin-bottom: 5px;
+        }
+
+        &.body-row-content {
+          border-top: unset;
+          border-bottom: var(--app-border-thin-primary-color);
+        }
+
+        &:not(.body-row-content) {
+          &:hover,
+          &.uk-active {
+            color: var(--app-background-color);
+            background-color: var(--app-primary-color);
+            font-weight: bold;
+            cursor: pointer;
+            span {
+              font-weight: bold;
+              color: var(--app-background-color);
+            }
+          }
+          td {
+            &:first-of-type {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+
+      &.dummy-row {
+        td {
+          padding: 5px 0 5px 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: globals.$tablet-breakpoint) {
+  #earn {
+    .uk-table {
+      tr {
+        &.body-row:not(.body-row-content).uk-active {
+          color: inherit !important;
+          background-color: inherit !important;
+          font-weight: inherit !important;
+          td:first-of-type {
+            color: var(--app-background-color) !important;
+            background-color: var(--app-primary-color) !important;
+            font-weight: bold !important;
+            span {
+              color: var(--app-background-color) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

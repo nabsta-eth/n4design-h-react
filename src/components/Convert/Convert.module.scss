@@ -1,0 +1,83 @@
+.convertGridWrapper {
+  display: grid;
+  grid-template-columns: 435px 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.convertFormOnly {
+  min-height: calc(var(--available-content-height-with-both-taskbars) - 11px);
+  grid-template-columns: 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.priceChart {
+  height: 432px;
+}
+
+.hlpTable {
+  margin-top: -28px;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+
+.hlpTableMobile {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  margin-bottom: 12px;
+}
+
+.switchButton {
+  margin: -11px 0 -12px !important;
+}
+
+.value {
+  opacity: 0.675;
+  font-size: 0.75rem;
+  sub {
+    bottom: 0;
+  }
+}
+
+.hlpValue {
+  opacity: 0.675;
+  sub {
+    bottom: 0;
+  }
+}
+
+.estimatedImpact {
+  margin-top: 2px;
+  font-size: 0.875rem;
+  opacity: 0.675;
+}
+
+.highEstimatedImpact {
+  color: var(--app-orange-color) !important;
+  button {
+    color: var(--app-orange-color) !important;
+  }
+  .convert-price-button:hover svg {
+    color: var(--app-orange-color) !important;
+  }
+  &:after {
+    border-bottom-color: var(--app-orange-color) !important;
+  }
+  .deltaSymbol i {
+    color: var(--app-orange-color);
+  }
+}
+
+.networkButtons {
+  flex-wrap: wrap;
+  gap: 5px 15px;
+  button {
+    min-width: 220px;
+  }
+}
+
+.hlpSelector {
+  margin-top: 46px;
+}

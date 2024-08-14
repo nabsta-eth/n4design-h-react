@@ -1,0 +1,21 @@
+.uk-search {
+  border-bottom: 1px solid var(--app-primary-color-qtr-opacity);
+  .uk-search-icon-flip {
+    width: 36px;
+  }
+}
+
+.hfi-search-no-match {
+  .uk-button {
+    &:disabled {
+      opacity: 1;
+    }
+    &:hover {
+      font-weight: inherit !important;
+      span {
+        font-weight: inherit !important;
+        color: inherit;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.accountTransactionContainer {
+  height: 48px;
+  padding: 0 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+}
+
+.iconColumn {
+  gap: 1rem;
+}
+
+.dateTime {
+  font-size: 0.75rem;
+}
+
+.accountTransactionLink {
+  font-size: 1.25rem;
+  margin-bottom: -2px;
+}

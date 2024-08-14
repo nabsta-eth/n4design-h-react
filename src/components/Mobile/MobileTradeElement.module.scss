@@ -1,0 +1,47 @@
+.tradeContainer {
+  height: 62px;
+  padding: 0 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+}
+
+.isLongLeverage {
+  font-size: 0.75rem;
+}
+
+.dateTime {
+  font-size: 0.75rem;
+  line-height: 1.75;
+}
+
+.tradeLink {
+  font-size: 1.25rem;
+  margin-bottom: -2px;
+}
+
+.pairAssetsOnly {
+  margin-top: 1px;
+  margin-bottom: -4px;
+}
+
+.smaller {
+  font-size: 0.8rem;
+}
+
+.sizeUnit {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.dataColumn {
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.switchButton {
+  cursor: pointer !important;
+  line-height: 1;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}

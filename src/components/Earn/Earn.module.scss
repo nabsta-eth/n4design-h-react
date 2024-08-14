@@ -1,0 +1,76 @@
+.earnTabs {
+  margin-left: -20px;
+}
+
+.earnRow {
+  padding: 9px 10px;
+  height: 42px;
+}
+
+.tvlCell {
+  min-height: 29px;
+}
+
+.networkLabel {
+  margin-top: 4px;
+  &:before {
+    margin-top: 4px;
+  }
+}
+
+.ethImg {
+  margin-left: -12px;
+}
+
+.maxTablet {
+  border-bottom: var(--app-border-thin-primary-color);
+}
+
+.rewards {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  [class^="_icon"] {
+    border-radius: 0;
+  }
+}
+
+:global(.body-row) {
+  :global(.uk-tooltip-content):after {
+    bottom: 0 !important;
+  }
+}
+
+:global(.body-row):hover,
+.active {
+  :global(.uk-tooltip-content):after {
+    border-bottom: 1px dashed var(--app-background-color) !important;
+  }
+}
+
+.inactive {
+  border-top: var(--app-border-thin-light-primary-color) !important;
+  border-color: var(--app-primary-color) !important;
+  color: var(--app-primary-color-half-opacity) !important;
+  span {
+    color: var(--app-primary-color-half-opacity) !important;
+  }
+  img {
+    opacity: 0.5;
+  }
+  &:hover,
+  &.active {
+    color: var(--app-background-color) !important;
+    background-color: var(--app-primary-color-half-opacity) !important;
+    border-color: var(--app-primary-color) !important;
+    font-weight: bold;
+    span,
+    svg {
+      color: var(--app-background-color) !important;
+      font-weight: bold;
+    }
+  }
+}
+
+.lastActiveRow {
+  border-bottom: var(--app-border-thin-primary-color) !important;
+}

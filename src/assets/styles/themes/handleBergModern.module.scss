@@ -1,0 +1,61 @@
+@use "handleBergModern" as handleBergModern;
+@use "src/assets/styles/globals" as globals;
+
+:export {
+  primaryColor: handleBergModern.$primary-color;
+  upColor: handleBergModern.$up-color;
+  downColor: handleBergModern.$down-color;
+  backgroundColor: handleBergModern.$background-color;
+  hoverColor: handleBergModern.$hover-color;
+  errorColor: handleBergModern.$error-color;
+  orangeColor: handleBergModern.$orange-color;
+  warningColor: handleBergModern.$warning-color;
+  halfOpacityEquivalentColor: handleBergModern.$half-opacity-equivalent-color;
+  quarterOpacityEquivalentColor: handleBergModern.$quarter-opacity-equivalent-color;
+  eighthOpacityEquivalentColor: handleBergModern.$eighth-opacity-equivalent-color;
+  chartStyle: 0;
+  chartBackgroundColor: #000000c0;
+  chartBackgroundType: gradient;
+  chartBackgroundStartColor: #2a313e;
+  chartBackgroundStopColor: #000000;
+  chartUpColor: #eeeeee;
+  chartDownColor: #eeeeee;
+  chartGridColor: #eeeeee40;
+  chartGridStyle: 1;
+  chartTextColor: #eeeeee;
+  font: globals.$font;
+  homesteadColor: globals.$homestead-color;
+  ropstenColor: globals.$ropsten-color;
+  kovanColor: globals.$kovan-color;
+  rinkebyColor: globals.$rinkeby-color;
+  testnetColor: globals.$testnet-color;
+  polygonColor: globals.$polygon-color;
+  borderWidth: handleBergModern.$border-width;
+  borderRadius: handleBergModern.$border-radius;
+  tabBorderWidth: handleBergModern.$tab-border-width;
+  border: handleBergModern.$border-width solid handleBergModern.$primary-color;
+  borderThin: 1px solid handleBergModern.$primary-color;
+  borderThinLight: 1px solid handleBergModern.$half-opacity-equivalent-color;
+  errorBorder: handleBergModern.$border-width solid
+    handleBergModern.$error-color;
+  warningBorder: handleBergModern.$border-width solid
+    handleBergModern.$warning-color;
+  yellowBorder: handleBergModern.$border-width solid
+    handleBergModern.$warning-color;
+  mobileMenuBreakpoint: globals.$mobile-menu-breakpoint;
+  minLargeDesktopBreakpoint: globals.$large-desktop-breakpoint;
+  maxLargeDesktopBreakpoint: globals.$large-desktop-breakpoint-max;
+  minDesktopBreakpoint: globals.$desktop-breakpoint;
+  maxDesktopBreakpoint: globals.$desktop-breakpoint-max;
+  minTabletBreakpoint: globals.$tablet-breakpoint;
+  maxTabletBreakpoint: globals.$tablet-breakpoint-max;
+  minMobileBreakpoint: globals.$mobile-breakpoint;
+  maxMobileBreakpoint: globals.$mobile-breakpoint-max;
+  minSmallMobileBreakpoint: globals.$min-small-mobile-breakpoint;
+  maxSmallMobileBreakpoint: globals.$max-small-mobile-breakpoint;
+  maxAppWidth: globals.$max-app-width;
+  taskbarIconSize: globals.$taskbar-icon-size;
+  taskbarHandleIconSize: globals.$taskbar-handle-icon-size;
+  minTradeChartBreakpoint: globals.$trade-chart-breakpoint;
+  maxTradeChartBreakpoint: globals.$trade-chart-breakpoint - 1;
+}

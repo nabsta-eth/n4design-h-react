@@ -1,0 +1,38 @@
+.caption {
+  font-size: 0.75rem;
+}
+
+.smaller {
+  font-size: 1rem;
+}
+
+.barWrapper {
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  :global(.uk-tooltip-content):after {
+    display: none;
+  }
+}
+
+.outerBar {
+  height: 1rem;
+  width: 10rem;
+  overflow: hidden;
+}
+
+.innerBar {
+  height: 100% !important;
+}
+
+.buttonsWrapper {
+  width: 210px;
+}
+
+[id^="tradeAccountLiquidation"] {
+  .caption {
+    :global(.uk-tooltip-content):after {
+      width: 106px;
+    }
+  }
+}

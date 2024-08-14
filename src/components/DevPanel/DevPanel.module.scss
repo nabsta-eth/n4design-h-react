@@ -1,0 +1,16 @@
+.panel {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: calc(50% - 47.5px);
+  height: 95px;
+  width: 100px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  text-align: center;
+}
+
+.visible {
+  display: block !important;
+}

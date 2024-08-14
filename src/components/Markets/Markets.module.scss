@@ -1,0 +1,120 @@
+$markets-header-height: 42;
+$markets-header-hint-height: 34;
+.marketsWrapper {
+  font-size: 12px;
+}
+
+:export {
+  marketsHeaderHeight: $markets-header-height;
+  marketsHeaderHintHeight: $markets-header-hint-height;
+}
+
+.markets {
+  border: var(--app-border-primary-color);
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.marketsOnly {
+  margin-top: 16px;
+  border: var(--app-border-primary-color);
+}
+
+.mobileMarkets {
+  height: var(--available-content-height-with-bottom-taskbar-only);
+}
+
+.popoutMarkets {
+  height: 100vh;
+}
+
+.headerWrapper {
+  padding: 0 12px;
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+  height: #{$markets-header-height}px;
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+  width: 178px;
+  :global(.uk-input) {
+    height: 32px !important;
+  }
+  :global(.uk-form-icon) {
+    height: 28px !important;
+    width: 28px !important;
+  }
+  :global(.uk-form-icon:not(.uk-form-icon-flip)) {
+    margin-top: 2px !important;
+  }
+}
+
+:global(.mobile) .searchInput {
+  :global(.uk-form-icon:not(.uk-form-icon-flip)) {
+    margin-top: 3px !important;
+  }
+}
+
+.noBorder {
+  border: none;
+}
+
+.priceHeader {
+  line-height: 1.6;
+}
+
+.changeHeader {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.marketSelect {
+  margin-top: 1px;
+  max-width: 400px !important;
+}
+
+.hintWrapper {
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+  padding: 6px 0;
+}
+
+.hintContent {
+  span,
+  i {
+    color: var(--app-warning-color);
+  }
+}
+
+.reflectVertical {
+  transform: rotateY(180deg) translateY(-5px);
+}
+
+.mobileAddFavesWrapper {
+  border-bottom: var(--app-border-thin-x-light-primary-color);
+  padding: 6px 12px;
+}
+
+.keyBox {
+  height: 20px;
+  width: 20px;
+  background-color: var(--app-primary-color-8th-opacity);
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(var(--app-border-radius) * 0.5);
+
+  .checkboxDummy {
+    height: 12px;
+    width: 12px;
+    background-color: transparent !important;
+    border: var(--app-border-primary-color);
+    border-radius: calc(var(--app-border-radius) / 3);
+  }
+  span,
+  i {
+    font-size: 0.8rem;
+  }
+}

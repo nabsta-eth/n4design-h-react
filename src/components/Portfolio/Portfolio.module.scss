@@ -1,0 +1,41 @@
+.gridWrapper {
+  border: var(--app-border-width) solid transparent;
+  overflow: hidden;
+  // value = (height in units to accommodate MAX_FAVOURITES) * 100 (row height) + 10 * (rows + 1) (gaps) + 2 * rows (borders)
+  max-height: 338px;
+  margin: 0 -11px;
+}
+
+.gridWrapperCustomise {
+  border-radius: var(--app-border-radius);
+  max-height: unset;
+
+  :global(.uk-card) {
+    cursor: move;
+  }
+}
+
+html[class$="Modern"] {
+  .gridWrapperCustomise {
+    border-color: transparent;
+    background-color: var(--app-primary-color-32nd-opacity);
+    border-radius: var(--app-border-radius);
+  }
+}
+
+html:not([class$="Modern"]) {
+  .gridWrapperCustomise {
+    border-color: var(--app-primary-color-half-opacity);
+    border-radius: var(--app-border-radius);
+  }
+}
+
+.divider {
+  border-top: var(--app-border-thin-primary-color);
+  margin: 0 10px;
+}
+
+.hidden {
+  height: 0 !important;
+  opacity: 0;
+}

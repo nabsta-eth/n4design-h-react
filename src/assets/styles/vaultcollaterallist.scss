@@ -1,0 +1,150 @@
+#vault-collateral {
+  .hfi-vault-collateral-table-header {
+    padding: 0.5rem 1rem;
+    border-bottom: none;
+  }
+
+  .hfi-vault-collateral-header-row {
+    padding: 0.5rem 1rem;
+    border: var(--app-border-width) solid var(--app-primary-color) !important;
+  }
+}
+
+.hfi-top-n1 {
+  top: -1px;
+}
+
+.hfi-token-cell {
+  width: 116px;
+}
+
+.hfi-collateral-cell {
+  width: 84px;
+}
+
+.fa-stack {
+  margin-top: -4px;
+  display: inline-block;
+  height: 1em;
+  line-height: 1em;
+  position: relative;
+  vertical-align: middle;
+  width: 1.25em;
+}
+
+.fa-stack-halfx {
+  font-size: 0.5em;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.hfi-action-column {
+  width: 50px;
+}
+
+.hfi-token-column {
+  width: 250px;
+}
+
+@media screen and (max-width: 959px) {
+  .hfi-empty-cell {
+    padding: 0;
+  }
+
+  .uk-form-horizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+    .uk-form-controls {
+      margin-left: 0 !important;
+    }
+  }
+
+  .hfi-table-border-left {
+    border: 0;
+  }
+
+  tr.hfi-wallet-header-row.row-2 {
+    display: none;
+  }
+
+  td[data-label="actions"] {
+    text-align: right !important;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    display: block;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: relative;
+    float: left;
+  }
+
+  table td[scope="row"]::before {
+    font-weight: bold;
+  }
+
+  table td span[data-label]::before {
+    content: attr(data-label);
+    position: relative;
+    float: left;
+    font-weight: bold;
+  }
+
+  table td a[data-label]::before {
+    content: attr(data-label);
+    position: relative;
+    float: left;
+    font-weight: bold;
+  }
+
+  table td {
+    display: block;
+    text-align: right;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .uk-table-divider > tr:not(:first-child),
+  .uk-table-divider > :not(:first-child) > tr,
+  .uk-table-divider > :first-child > tr:not(:first-child) {
+    border-top-width: 2px;
+
+    td:first-child {
+      border-bottom: 1px solid var(--app-primary-color);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wallet {
+    .hfi-wallet-table-header {
+      flex-direction: inherit !important;
+
+      h4 {
+        text-align: left;
+      }
+    }
+  }
+
+  .hfi-totals {
+    display: none;
+  }
+}

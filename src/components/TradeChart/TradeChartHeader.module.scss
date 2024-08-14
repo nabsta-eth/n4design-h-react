@@ -1,0 +1,169 @@
+@use "./TradeChartHeader.scss" as tradeChartHeader;
+
+$buy-sell-widget-padding: 25;
+:export {
+  tradeChartHeaderHeight: tradeChartHeader.$trade-chart-header-height;
+  buySellWidgetPadding: $buy-sell-widget-padding;
+}
+
+.marketImages {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  z-index: 0;
+  margin-left: -3px;
+}
+
+.loaderHeightSmall {
+  height: 18px !important;
+}
+
+.loaderHeightLarge {
+  height: 18px !important;
+}
+
+.marketImagesSmallDevice {
+  margin-top: -3px;
+  margin-bottom: -4px;
+}
+
+.overlapImage {
+  margin-left: -12px;
+}
+
+.gapThreeRem {
+  column-gap: 3rem;
+}
+
+.overlapImageSmallDevice {
+  margin-left: -8px;
+}
+
+.gapTwoRem {
+  column-gap: 2rem;
+}
+
+.gapOneRem {
+  padding-top: 1px;
+  column-gap: 1rem;
+}
+
+.gapHalfRem {
+  column-gap: 0.5rem;
+}
+
+.gapPoint675Rem {
+  column-gap: 0.5rem;
+}
+
+.usdIsBase {
+  z-index: 1;
+}
+
+.mobile {
+  margin-bottom: 3px;
+}
+
+.drag {
+  cursor: move;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 13px);
+  padding: 0 4px;
+  line-height: 1;
+  background-color: var(--app-background-color);
+  border: var(--app-border-width) solid var(--app-primary-color-qtr-opacity);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  z-index: 1;
+  font-size: 1.2rem;
+}
+
+.buySellButtonGroup {
+  position: absolute !important;
+  right: 124px;
+  top: #{tradeChartHeader.$trade-chart-header-height - $buy-sell-widget-padding +
+    5}px;
+  padding: #{$buy-sell-widget-padding}px 0;
+  border-radius: 50%;
+
+  &.headerWrap {
+    top: calc(140px - #{$buy-sell-widget-padding}px);
+  }
+
+  button:first-of-type {
+    padding-right: 18px !important;
+  }
+
+  button:last-of-type {
+    padding-left: 18px !important;
+  }
+
+  :global(.hfi-button-collection) {
+    backdrop-filter: blur(2px);
+  }
+}
+
+.button {
+  height: 32px;
+  padding: 0 8px !important;
+}
+
+.rightSection {
+  column-gap: 0.75rem;
+}
+
+.priceDisplay {
+  line-height: 19px;
+  max-height: 20px;
+  padding: 0 0.25rem;
+}
+
+.headerDetailClassNonSpecial {
+  line-height: 19px;
+  padding: 0 0.25rem;
+  margin: 1px 0 0 !important;
+}
+
+.disabled {
+  opacity: 0.5;
+  line-height: 20px !important;
+  margin-top: 2px;
+}
+
+.smaller {
+  .headerDetailClassNonSpecial,
+  .priceDisplay {
+    font-size: 1rem !important;
+  }
+  .headerDetailClassNonSpecial {
+    margin-top: 3px !important;
+  }
+  [class*="largerFontSize1Pt1"] {
+    font-size: 1.25rem !important;
+  }
+}
+
+.noQuoteIcon {
+  width: 36px;
+}
+
+.newChartButton {
+  margin: 0 -4px;
+}
+
+.marketPairSymbols {
+  margin-top: -4px;
+}
+
+.maxLeverage {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  font-size: 0.8rem;
+  padding: 1px 4px 0;
+  height: 18px;
+  color: var(--app-warning-color);
+  background-color: var(--app-background-color);
+  border: var(--app-border-width) solid var(--app-warning-color);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+}

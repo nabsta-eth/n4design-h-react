@@ -1,0 +1,51 @@
+.convertChartButtons {
+  button {
+    margin-top: -20px;
+    line-height: 24px !important;
+    padding: 0 12px !important;
+  }
+}
+
+.twelveDataIcon {
+  margin-top: -5px;
+  margin-left: -4px;
+  .onlyTwelveData {
+    margin-left: "inherit";
+  }
+}
+
+.coingeckoIcon {
+  margin-top: -3px;
+  opacity: 1;
+  .onlyTwelveData {
+    opacity: 0;
+  }
+}
+
+.zIndex0 {
+  z-index: 0;
+  :global(.uk-tooltip-content):after {
+    bottom: -2px !important;
+  }
+}
+
+.chartTitles {
+  :global(.hfi-up),
+  :global(.hfi-down) {
+    display: inline-flex;
+  }
+}
+
+.switchButton {
+  cursor: pointer !important;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fromTokenImg,
+.toTokenImg {
+  [class^="_fallbackImg"] {
+    margin-top: -13px;
+  }
+}

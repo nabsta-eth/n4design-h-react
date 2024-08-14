@@ -1,0 +1,71 @@
+{
+  "short_name": "handle",
+  "name": "handle",
+  "description": "the global defi FX protocol. borrow, swap & trade multi-currency stablecoins backed by ethereum and more.",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/maskable-large.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/maskable-small.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "screenshots":[
+    {
+      "src":"/screenshots/screenshot540x720_1.png",
+      "type":"image/png",
+      "sizes":"540x720",
+      "form_factor":"narrow"
+    },
+    {
+      "src":"/screenshots/screenshot540x720_2.png",
+      "type":"image/png",
+      "sizes":"540x720",
+      "form_factor":"narrow"
+    },
+    {
+      "src":"/screenshots/screenshot1024x593_1.png",
+      "type":"image/png",
+      "sizes":"1024x593",
+      "form_factor":"wide"
+    },
+    {
+      "src":"/screenshots/screenshot1024x593_2.png",
+      "type":"image/png",
+      "sizes":"1024x593",
+      "form_factor":"wide"
+    }
+  ],
+  "theme_color": "#dadada",
+  "background_color": "#0f1528"
+}

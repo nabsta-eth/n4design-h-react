@@ -1,0 +1,80 @@
+$mobile-market-row-height: 40;
+:export {
+  mobileMarketRowHeight: $mobile-market-row-height;
+}
+
+.marketContainer {
+  padding-left: 12px;
+  border-bottom: var(--app-border-thin-xx-light-primary-color);
+  height: #{$mobile-market-row-height}px;
+}
+
+.sellPrice {
+  font-size: 1.1rem;
+  padding-right: 8px;
+}
+
+.buyPrice {
+  font-size: 1.1rem;
+  padding-right: 8px;
+  animation-delay: 0.2s;
+}
+
+.price {
+  font-size: 1.1rem;
+  padding-top: 0;
+  padding-right: 12px;
+  animation-delay: 0.4s;
+}
+
+.change {
+  font-size: 0.8rem;
+  padding-top: 0;
+  padding-right: 12px;
+}
+
+.select {
+  pointer-events: auto;
+}
+
+.unavailableMessage {
+  padding-right: 12px;
+  white-space: nowrap;
+}
+
+.marketPairSymbols {
+  margin-top: -3px;
+}
+
+.maxLeverage {
+  position: relative;
+  z-index: 1;
+  margin: -1px 0 0 8px;
+  font-size: 0.675rem;
+  padding: 0 4px;
+  height: 15px;
+  color: var(--app-theme-leverage-color);
+  background-color: var(--app-background-color);
+  border: var(--app-border-width) solid var(--app-theme-leverage-color);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+}
+
+.favourite {
+  height: 16px;
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--app-border-width) solid var(--app-primary-color-half-opacity);
+  border-radius: calc(var(--app-border-radius) * 0.5);
+  font-size: 0.75rem;
+  &.showIcon {
+    span {
+      visibility: initial;
+    }
+  }
+  span {
+    visibility: hidden;
+    margin-top: 2px;
+  }
+}
